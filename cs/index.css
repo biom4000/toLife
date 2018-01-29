@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 2017/11/16, 下午 01:45:39
+    Author     : Andy_Wang
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background: #828282;
+}
+p{
+    margin: 0px;
+    text-align: center;
+    font-family: 'Handlee', cursive;
+}
+h2{
+    font-family: 'Pacifico', cursive;
+    word-spacing: 10px;
+    font-size: 40px;
+    text-align: center;
+    color: #00A600;
+}
+a{
+    text-align: right;
+}
+button{
+    height: 40px;
+    font-family: 'Handlee', cursive;
+    letter-spacing: 5px;
+    background: #FF5151;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+input{
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 1px solid #d0d0d0;
+    outline: none;
+    transition: 0.5s ease-out;
+    margin: 0px 0px 20px 0px;
+}
+input:focus{
+    border-bottom: 2px solid red;
+}
+a{
+    text-decoration: none;
+}
+.cover_login{
+    width: 30%;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.cover_background{
+    display: flex;
+    background: white;
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    height: 80%;
+    width: 85%;
+}
+img{
+    width: 70%;
+    filter: saturate(7);
+}
