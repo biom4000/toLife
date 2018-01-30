@@ -40,6 +40,7 @@ header .login{
     top: 12px;
     left: 1240px;
 }
+
 header .pagename{
     position: absolute;
     top: 0;
@@ -67,7 +68,7 @@ header .logo{
     left: 550px;
     animation-name: logo_example;
     animation-duration: 20s;
-    animation-iteration-count: 10;
+    animation-iteration-count: 1;
 }
 @keyframes logo_example {
     0%   {left:550px;}
