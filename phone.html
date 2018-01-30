@@ -5,18 +5,17 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html lang="zh-Hant-TW">
-<script src="js/phone.js"></script>
 <title>toLife welcome</title>
 
 <link rel="shortcut icon" type="image/x-icon" href="image/Bridge.ico">
 <link href="cs/phone.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="cs/mold.css">
 <link href="https://fonts.googleapis.com/css?family=Amaranth|Orbitron" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<!--[if lt IE 9]>
-<script src="html5shiv.js"></script>
-<![endif]-->
+<script src="js/phone.js"  type="text/javascript></script>
+
 <body>
 <header>
     <img class="menu" src="image/ic_menu_white_48px.svg" alt="miss"/>
@@ -26,6 +25,11 @@ and open the template in the editor.
     <img class="setting" src="image/ic_settings_white_48px.svg" alt="miss" />
     <img class="login" src="image/ic_account_circle_white_48px.svg" alt="miss" />
 </header>
+<script>
+    $( ".pagename" ).click(function() {
+        $( this ).slideUp();
+    });
+</script>
 <nav>
     <div class="home">
         <img src="image/ic_home_black_48px.svg" alt="miss" />
