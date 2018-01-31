@@ -1,0 +1,32 @@
+section{
+    display: flex;
+}
+section .app_download{
+    width: 500px;
+    margin: 50px 20px;
+    background: cornflowerblue;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    padding: 10px 40px;
+
+}
+section .app_download .phone{
+    grid-column: 1/4;
+    grid-row: 2/8;
+}
+section .app_download h2{
+    grid-column: 1/8;
+    grid-row: 1/2;
+    text-align: center;
+    padding-top: 10px;
+    background: red;
+}
+section .app_download .store{
+    grid-column: 5/8    ;
+    grid-row: 6/7;
+    width: 200px;
+}
+section .app_download .qrcode{
+    grid-column: 5/8;
+    grid-row: 3/6;
+}
