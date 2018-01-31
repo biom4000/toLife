@@ -1,0 +1,29 @@
+section .wall{
+    margin: 50px 0;
+    display: flex;
+    background: white;
+}
+section .mail_user{
+    background: white;
+    padding: 30px 50px;
+}
+section input{
+    width: 400px;
+    background: #F2F2F2;
+    padding: 5px 10px;
+}
+section .content{
+    height: 200px;
+}
+section .boss{
+    padding-left: 50px;
+    background: #828282;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 80px;
+}
+section .boss h2{
+    font-size: 2.5em;
+    margin: 50px 0 20px 0;
+    text-align: center;
+}
