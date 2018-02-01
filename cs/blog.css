@@ -2,7 +2,7 @@ section .blog_wall{
     width: 1050px;
     height: 550px;
     position: relative;
-    top: 30px;
+    top: 20px;
     left: 40px;
 }
 section .blog_page button{
@@ -12,7 +12,7 @@ section .blog_page button{
 }
 section .blog_content{
     background: white;
-    height: 500px;
+    height: 530px;
     margin: 10px 0;
 }
 section .blog_list{
@@ -25,11 +25,62 @@ section .location{
 section .blog_title h2{
     margin: 1% 2%;
 }
+section .blog_user{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 15px;
+}
 section .pic_card{
-    margin: 20px;
+    border-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+section #pic_card1{
+    border-style: none solid solid none;
+    border-width: 1px;
+}
+section #pic_card2{
+    border-style: none none solid none;
+    border-width: 1px;
+}
+section #pic_card3{
+    border-style: none solid solid none;
+    border-width: 1px;
+}
+section #pic_card4{
+    border-style: none none solid none;
+    border-width: 1px;
+}
+section #pic_card5{
+    border-style: none solid solid none;
+    border-width: 1px;
+}
+section .pic_card img{
+    width: 180px;
+    height: 100px;
+    margin: auto 5px;
+}
+section .pic_card div h4 span{
+    font-size: 0.5em;
+    color: #F2994A;
+}
+section .pic_card h4{
+    margin: 15px 10px;
+    font-size: 1.4em;
+    color: #2F80ED;
+}
+section .text_area{
+    font-size: 0.8em;
+}
+section .pic_card div{
+    padding: 0 10px 10px 10px;
+    width: 320px;
+}
+a{
+    text-decoration: none;
 }
 hr{
     border: none;
     border-top: 3px double black;
     width: 97%;
+    margin: 0 auto;
 }
