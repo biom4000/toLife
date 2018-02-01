@@ -1,6 +1,6 @@
 section{
     left: 360px;
-    width: 72.4%;
+    width: 74%;
 }
 .favor_nav{
     background: #E0E0E0;
@@ -13,8 +13,24 @@ section{
 .favor_nav .favor_bar{
     background: #E0E0E0;
 }
+.favor_nav .favor_bar img{
+    width: 30px;
+    margin: 5px 10px;
+}
 .favor_nav .favor_search{
     background: white;
+    display: flex;
+}
+.favor_nav .favor_search img{
+    width: 30px;
+    height: 30px;
+    margin: 5px 5px 5px 10px;
+}
+.favor_nav .favor_search input{
+    width: 120px;
+    margin: 8px auto;
+    border: none;
+    border-bottom: 1px solid black;
 }
 .favor_nav .favor_subject1{
     background: #F2C94C;

@@ -1,9 +1,7 @@
 section .blog_wall{
     width: 1050px;
     height: 550px;
-    position: relative;
-    top: 20px;
-    left: 40px;
+    margin: auto auto;
 }
 section .blog_page button{
     background: #F2F2F2;
@@ -12,7 +10,7 @@ section .blog_page button{
 }
 section .blog_content{
     background: white;
-    height: 530px;
+    height: 510px;
     margin: 10px 0;
 }
 section .blog_list{
@@ -23,7 +21,7 @@ section .location{
     margin: 20px;
 }
 section .blog_title h2{
-    margin: 1% 2%;
+    margin: 10px 20px;
 }
 section .blog_user{
     display: grid;
@@ -64,7 +62,7 @@ section .pic_card div h4 span{
     color: #F2994A;
 }
 section .pic_card h4{
-    margin: 15px 10px;
+    margin: 8px 10px;
     font-size: 1.4em;
     color: #2F80ED;
 }
