@@ -16,51 +16,49 @@ body{
 header{
     background: black;
     width: 100%;
-    height: 70px;
+    height: 50px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
 }
 header .setting{
-    width: 25px;
-    padding-top: 18px;
+    width: 20px;
     cursor: pointer;
     transition-duration: 0.5s;
     position: absolute;
-    top: 15px;
-    left: 1200px;
+    top: 23px;
+    left: 1205px;
 }
 header .login{
-    width: 50px;
+    width: 40px;
     cursor: pointer;
     transition-duration: 0.5s;
     position: absolute;
-    top: 12px;
+    top: 6px;
     left: 1230px;
 }
 
 header .pagename{
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 100px;
     color: white;
     font-size: 1.5em;
-    padding-top: 18px;
     font-family: 'Amaranth', sans-serif;
 }
 header .menu{
     position: absolute;
     left: 20px;
-    top: 15px;
+    top: 5px;
     width: 40px;
     cursor: pointer;
     transition-duration: 0.5s;
 }
 header .logo{
-    width: 70px;
+    width: 50px;
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 550px;
     animation-name: logo_example;
     animation-duration: 20s;
@@ -76,11 +74,11 @@ header .logo{
 }
 header .logoname{
     color: white;
-    font-size: 3em;
+    font-size: 2.8em;
     font-family: 'Orbitron', sans-serif;
     position: absolute;
     top: 0;
-    left: 650px;
+    left: 610px;
 }
 header .menu:hover{
     opacity: 0.7;
@@ -95,9 +93,9 @@ header .login:hover{
 nav{
     background: #BDBDBD;
     width: 180px;
-    height: 90%;
+    height: 92.6%;
     position: fixed;
-    top: 70px
+    top: 50px
 }
 nav div{
     font-size: 1em;
@@ -116,6 +114,7 @@ nav .home img{
     transition-duration: 0.5s;
 }
 nav .home{
+    margin-top: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 nav div:hover{
@@ -232,8 +231,8 @@ nav .phone:hover img{
 section{
     background: #6FCF97;
     position: fixed;
-    top: 70px;
+    top: 50px;
     left: 180px;
     width: 86.8%;
-    height: 89%;
+    height: 92.6%;
 }

@@ -1,0 +1,35 @@
+section .blog_wall{
+    width: 1050px;
+    height: 550px;
+    position: relative;
+    top: 30px;
+    left: 40px;
+}
+section .blog_page button{
+    background: #F2F2F2;
+    border: 1px solid black;
+    cursor: pointer;
+}
+section .blog_content{
+    background: white;
+    height: 500px;
+    margin: 10px 0;
+}
+section .blog_list{
+    background: #828282;
+    display: flex;
+}
+section .location{
+    margin: 20px;
+}
+section .blog_title h2{
+    margin: 1% 2%;
+}
+section .pic_card{
+    margin: 20px;
+}
+hr{
+    border: none;
+    border-top: 3px double black;
+    width: 97%;
+}
