@@ -1,46 +1,59 @@
 section{
-    left: 360px;
-    width: 74%;
+    display: flex;
 }
-.favor_nav{
+section .favor_nav{
     background: #E0E0E0;
-    width: 180px;
-    height: 92.6%;
-    position: fixed;
-    top: 50px;
-    left: 180px;
+    width: 16%;
+    height: 100%;
 }
-.favor_nav .favor_bar{
+section .favor_bar{
     background: #E0E0E0;
 }
-.favor_nav .favor_bar img{
+section .favor_bar img{
     width: 30px;
     margin: 5px 10px;
 }
-.favor_nav .favor_search{
+section .favor_search{
     background: white;
     display: flex;
 }
-.favor_nav .favor_search img{
+section .favor_search img{
     width: 30px;
     height: 30px;
     margin: 5px 5px 5px 10px;
 }
-.favor_nav .favor_search input{
+section .favor_search input{
     width: 120px;
     margin: 8px auto;
     border: none;
     border-bottom: 1px solid black;
 }
-.favor_nav .favor_subject1{
+section .favor_subject1{
     background: #F2C94C;
 }
-.favor_nav .favor_subject2{
+section .favor_subject2{
     background: #6FCF97;
 }
-
+section .favor_subject1 .title{
+    display: flex;
+    padding: 0 0 0 10px;
+}
+section .favor_subject1 .title input{
+    width: 80%;
+    height: 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0 10px;
+    margin-top: 15px;
+    outline: none;
+    font-size: 1.2em;
+}
+section .favor_subject1 .title img{
+    width: 30px;
+}
 #map {
-    width: 100%;
+    width: 84%;
     height: 100%;
     background-color: grey;
 }

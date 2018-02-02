@@ -1,5 +1,5 @@
 $(function(){
-    var len = 300; // 超過50個字以"..."取代
+    var len = 250; // 超過50個字以"..."取代
     $(".text_area").each(function(i){
         if($(this).text().length>len){
             $(this).attr("title",$(this).text());

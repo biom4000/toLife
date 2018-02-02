@@ -10,13 +10,17 @@ and open the template in the editor.
 *{
     box-sizing: border-box;
 }
+html{
+    height: 100%;
+}
 body{
     margin: 0;
+    height: 100%;
 }
 header{
     background: black;
     width: 100%;
-    height: 50px;
+    height: 8%;
     position: fixed;
     top: 0;
     left: 0;
@@ -92,10 +96,11 @@ header .login:hover{
 
 nav{
     background: #BDBDBD;
-    width: 180px;
-    height: 92.6%;
+    width: 14%;
+    height: 92%;
     position: fixed;
-    top: 50px
+    top: 8%;
+    left: 0;
 }
 nav div{
     font-size: 1em;
@@ -107,11 +112,13 @@ nav div{
     font-family: 'Amaranth', sans-serif;
     cursor: pointer;
     transition-duration: 0.5s;
+    overflow-x: hidden;
 }
 nav .home img{
     margin-left: 25px;
     width: 30px;
     transition-duration: 0.5s;
+    display: flex;
 }
 nav .home{
     margin-top: 30px;
@@ -231,8 +238,8 @@ nav .phone:hover img{
 section{
     background: #6FCF97;
     position: fixed;
-    top: 50px;
-    left: 180px;
-    width: 86.8%;
-    height: 92.6%;
+    top: 8%;
+    left: 14%;
+    width: 86%;
+    height: 92%;
 }

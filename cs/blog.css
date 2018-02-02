@@ -1,7 +1,8 @@
 section .blog_wall{
-    width: 1050px;
-    height: 550px;
+    width: 95%;
+    height: 95%;
     margin: auto auto;
+    overflow: hidden;: hidden;
 }
 section .blog_page button{
     background: #F2F2F2;
@@ -10,8 +11,9 @@ section .blog_page button{
 }
 section .blog_content{
     background: white;
-    height: 510px;
+    height: 90%;
     margin: 10px 0;
+    overflow: hidden;
 }
 section .blog_list{
     background: #828282;
@@ -53,9 +55,9 @@ section #pic_card5{
     border-width: 1px;
 }
 section .pic_card img{
-    width: 180px;
-    height: 100px;
-    margin: auto 5px;
+    width: 200px;
+    height: 120px;
+    margin: 5px;
 }
 section .pic_card div h4 span{
     font-size: 0.5em;
@@ -70,8 +72,8 @@ section .text_area{
     font-size: 0.8em;
 }
 section .pic_card div{
-    padding: 0 10px 10px 10px;
-    width: 320px;
+    padding: 0 5px 10px 10px;
+    width: 300px;
 }
 a{
     text-decoration: none;
