@@ -85,6 +85,10 @@ section .calendar {
     height: 100%;
     background-color: grey;
 }
+section .calendar_back{
+    background: white;
+    margin: 5% 5%;
+}
 section .calendar table,th,tr,td{
     border: 1px solid black;
     border-collapse: collapse;
