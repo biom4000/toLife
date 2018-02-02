@@ -1,0 +1,91 @@
+section{
+    display: flex;
+}
+section .palntrip_nav{
+    background: #6C6C6C;
+    width: 20%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+section .palntrip_bar{
+    background: none;
+    margin: 5px 10px;
+    text-align: right;
+}
+section .palntrip_nav img{
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+
+}
+section .palntrip_search{
+    background: white;
+    display: flex;
+}
+section .palntrip_search img{
+    width: 30px;
+    height: 30px;
+    margin: 5px 5px 5px 20px;
+}
+section .palntrip_search input{
+    width: 65%;
+    margin: 8px auto;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    text-align: center;
+}
+
+section .palntrip_subject1{
+    background: #F2C94C;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+section .palntrip_subject2{
+    background: #6FCF97;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+section h3{
+    font-size: 2.3em;
+    padding: 25px 15px 10px 15px;
+    margin: 0;
+}
+section hr{
+    width: 85%;
+    margin: 2px auto;
+    color: red;
+}
+section span{
+    font-size: 0.5em;
+    padding-left: 40%;
+}
+section .list_bar1{
+    background: #F2994A;
+    display: flex;
+    padding: 5px;
+    margin-top: 20px;
+}
+section .list_bar2{
+    background: #27AE60;
+    display: flex;
+    padding: 5px;
+    margin-top: 20px;
+}
+section .list_bar1 img{
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+section .list_bar2 img{
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+section .calendar {
+    width: 80%;
+    height: 100%;
+    background-color: grey;
+}
+section .calendar table,th,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
