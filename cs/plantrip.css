@@ -93,3 +93,12 @@ section .calendar table,th,tr,td{
     border: 1px solid black;
     border-collapse: collapse;
 }
+section .calendar_title{
+    display: flex;
+    background: rebeccapurple;
+    padding: 20px 10px;
+}
+section .title_seartch{
+    display: flex;
+    background: red;
+}
