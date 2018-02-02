@@ -115,8 +115,9 @@ nav div{
     overflow-x: hidden;
 }
 nav .home img{
-    margin-left: 25px;
+    margin: 10px 0 0 25px;
     width: 30px;
+    height: 30px;
     transition-duration: 0.5s;
     display: flex;
 }
@@ -141,8 +142,9 @@ nav .home div{
 }
 
 nav .plantrip img{
-    margin-left: 20px;
+    margin: 10px 0 0 20px;
     width: 30px;
+    height: 30px;
     transition-duration: 0.5s;
 }
 nav .plantrip{
@@ -160,8 +162,9 @@ nav .plantrip:hover img{
 }
 
 nav .star img{
-    margin-left: 20px;
+    margin: 10px 0 0 20px;
     width: 30px;
+    height: 30px;
     transition-duration: 0.5s;
 }
 nav .star{
@@ -179,8 +182,9 @@ nav .star:hover img{
 }
 
 nav .thumb img{
-    margin-left: 22px;
+    margin: 10px 0 0 22px;
     width: 30px;
+    height: 30px;
     transition-duration: 0.5s;
 }
 nav .thumb{
@@ -198,8 +202,9 @@ nav .thumb:hover img{
 }
 
 nav .email img{
-    margin-left: 23px;
+    margin: 10px 0 0 23px;
     width: 30px;
+    height: 30px;
     transition-duration: 0.5s;
 }
 nav .email{
@@ -217,8 +222,9 @@ nav .email:hover img{
 }
 
 nav .phone img{
-    margin-left: 25px;
+    margin: 10px 0 0 25px;
     width: 30px;
+    height: 30px;
     transition-duration: 0.5s;
 }
 nav .phone{

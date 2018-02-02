@@ -8,6 +8,7 @@ section .blog_page button{
     background: #F2F2F2;
     border: 1px solid black;
     cursor: pointer;
+    font-family: 'Amaranth', sans-serif;
 }
 section .blog_content{
     background: white;
@@ -18,21 +19,27 @@ section .blog_content{
 section .blog_list{
     background: #828282;
     display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    font-family: 'Righteous', cursive;
 }
 section .location{
     margin: 20px;
 }
 section .blog_title h2{
     margin: 10px 20px;
+    font-family: 'Amaranth', sans-serif;
 }
 section .blog_user{
     display: grid;
     grid-template-columns: auto auto;
     margin: 0 15px;
+    font-family: 'Amaranth', sans-serif;
 }
 section .pic_card{
     border-color: rgba(0, 0, 0, 0.3);
     display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 section #pic_card1{
     border-style: none solid solid none;
@@ -58,6 +65,7 @@ section .pic_card img{
     width: 200px;
     height: 120px;
     margin: 5px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
 }
 section .pic_card div h4 span{
     font-size: 0.5em;

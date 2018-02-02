@@ -2,16 +2,21 @@ section{
     display: flex;
 }
 section .favor_nav{
-    background: #E0E0E0;
+    background: #6C6C6C;
     width: 16%;
     height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 section .favor_bar{
-    background: #E0E0E0;
+    background: none;
+    margin: 5px 10px;
+    text-align: right;
 }
 section .favor_bar img{
     width: 30px;
-    margin: 5px 10px;
+    height: 30px;
+    margin: 0 5px;
+
 }
 section .favor_search{
     background: white;
@@ -27,18 +32,24 @@ section .favor_search input{
     margin: 8px auto;
     border: none;
     border-bottom: 1px solid black;
+    outline: none;
+    text-align: center;
 }
 section .favor_subject1{
     background: #F2C94C;
+    padding: 0 0 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 section .favor_subject2{
     background: #6FCF97;
+    padding: 0 0 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-section .favor_subject1 .title{
+section .title{
     display: flex;
     padding: 0 0 0 10px;
 }
-section .favor_subject1 .title input{
+section .title input{
     width: 80%;
     height: 20px;
     background: none;
@@ -48,9 +59,49 @@ section .favor_subject1 .title input{
     margin-top: 15px;
     outline: none;
     font-size: 1.2em;
+    text-align: center;
 }
-section .favor_subject1 .title img{
-    width: 30px;
+section .title img{
+    width: 25px;
+    margin-left: 8px;
+}
+section .list{
+    padding: 10px 0 5px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+section .list img{
+    width: 20px;
+    height: 20px;
+}
+section .list input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 110px;
+    margin: 0 auto;
+    outline: none;
+    text-align: center;
+}
+section .favor_subject1 #list1-1{
+    background: #F2994A;
+}
+section .favor_subject1 #list1-2{
+    background: #FFAF69;
+}
+section .favor_subject1 #list1-3{
+    background: #FCCB9F;
+}
+section .favor_subject2 #list2-1{
+    background: #219653;
+}
+section .favor_subject2 #list2-2{
+    background: #34C271;
+}
+section .favor_subject2 #list2-3{
+    background: #83FCB7;
 }
 #map {
     width: 84%;
