@@ -87,18 +87,62 @@ section .calendar {
 }
 section .calendar_back{
     background: white;
-    margin: 5% 5%;
+    margin: 3% 6%;
+    height: 90%;
 }
 section .calendar table,th,tr,td{
     border: 1px solid black;
     border-collapse: collapse;
 }
+section .calendar table{
+    width: 100%;
+    height: 88.5%;
+}
+section .calendar th{
+    background: #56CCF2;
+    color: white;
+    border-color: white;
+}
+section .calendar td{
+    height: 19%;
+}
+section .calendar .holiday{
+    width: 15%;
+}
+section .calendar .weekday{
+    width: 14%;
+}
 section .calendar_title{
     display: flex;
-    background: rebeccapurple;
-    padding: 20px 10px;
+    height: 12%;
+    padding: 0 20px;
+}
+section .calendar_title img{
+    width: 50px;
+    height: 50px;
+    margin: auto 0;
+}
+section .calendar_title h2{
+    font-size: 3em;
+    margin: auto 100px;
 }
 section .title_seartch{
     display: flex;
-    background: red;
+    height: 35px;
+    margin: auto 0px;
+    margin-left: 15%;
+    background: white;
+    border: 1px solid black;
+}
+section .title_seartch img{
+    width: 25px;
+    height: 25px;
+    margin: auto 10px;
+}
+section .title_seartch input{
+    width: 100%;
+    height: 25px;
+    margin: auto 10px;
+    border: none;
+    border-bottom: 1px solid black;
 }
