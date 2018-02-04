@@ -1,0 +1,12 @@
+section .back{
+    background: white;
+    width: 35%;
+    height: 70%;
+    margin: 5% auto;
+    border-radius: 5px;
+    padding: 1% 5%;
+}
+section .login_title{
+    background: red;
+}
+section

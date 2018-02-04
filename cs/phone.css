@@ -20,6 +20,7 @@ section .app_download h2{
     text-align: center;
     padding-top: 5px;
     background: rgb(255, 173, 252);
+    font-family: 'Righteous', cursive;
 }
 section .app_download .store{
     grid-column: 5/8;

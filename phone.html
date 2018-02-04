@@ -9,10 +9,10 @@ and open the template in the editor.
 <link rel="shortcut icon" type="image/x-icon" href="image/Bridge.ico">
 <link href="cs/phone.css" rel="stylesheet" type="text/css"/>
 <link href="cs/mold.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Amaranth|Orbitron" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amaranth|Orbitron|Righteous" rel="stylesheet">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/mold.js" type="text/javascript"></script>
 <body>
     <header>
@@ -24,23 +24,23 @@ and open the template in the editor.
         <img class="login" src="image/ic_account_circle_white_48px.svg" alt="miss" />
     </header>
     <nav>
-        <div class="home">
+        <div class="home" onclick="window.open('./home.html','_self')">
             <img src="image/ic_home_black_48px.svg" alt="miss" />
             <div>Home</div>
         </div>
-        <div class="plantrip">
+        <div class="plantrip" onclick="window.open('./plantrip.html','_self')">
             <img src="image/ic_map_black_48px.svg" alt="miss" />
             <div>PlanTrip</div>
         </div>
-        <div class="star">
+        <div class="star" onclick="window.open('./favorites.html','_self')">
             <img src="image/ic_star_black_48px.svg" alt="miss" />
             <div>Favorites</div>
         </div>
-        <div class="thumb">
+        <div class="thumb" onclick="window.open('./blog.html','_self')">
             <img src="image/ic_thumb_up_black_48px.svg" alt="miss" />
             <div>Proposal</div>
         </div>
-        <div class="email">
+        <div class="email" onclick="window.open('./mail.html','_self')">
             <img src="image/ic_email_black_48px.svg" alt="miss" />
             <div>Suggent</div>
         </div>
