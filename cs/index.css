@@ -51,7 +51,7 @@ input{
     outline: none;
     transition: 0.5s ease-out;
     margin: 0px 0px 20px 0px;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 input:focus{
     border-bottom: 1px solid red;
@@ -59,6 +59,7 @@ input:focus{
 a{
     text-decoration: none;
     color: #285db2;
+    font-size: 0.5em;
 }
 .cover_login{
     width: 30%;
