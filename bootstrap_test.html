@@ -7,25 +7,29 @@ and open the template in the editor.
 <html lang="zh-Hant-TW">
     <title>toLife welcome</title>
     <link rel="shortcut icon" type="image/x-icon" href="image/Bridge.ico">
-    <link href="cs/index.css" rel="stylesheet" type="text/css"/>
-    <script src="js/index.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Amaranth|Orbitron" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <!--[if lt IE 9]>
+    <script src="html5shiv.js"></script>
+    <![endif]-->
     <body>
         <div class="cover_background">
             <img src="image/HomeDoor.jpg" alt=""/>
-            <div class="cover_login">
+            <div class="container">
                 <h2>Hi Traveler</h2>
                 <p>ID</p>
                 <input type="text" name="id" value="" />
                 <p>Password</p>
                 <input type="password" name="password" value=""/>
-                <button type="button" onclick="tologin()">Login</button>
+                <button type="button" class="btn btn-primary">Login</button>
                 <p>or</p>
-                <button id="gohome" style="height: 80px" type="button" onclick="tohome()">Go</button>
-                <a href="./account.html">register now</a>
-                <a href="./forget.html">forget password?</a>
+                <button type="button" class="btn btn-success" onclick="location.href='./home.html';">Go</button>
+                <a href="#">register now</a>
+                <a href="#">forget password?</a>
             </div>
         </div>
     </body>

@@ -7,6 +7,31 @@ section .back{
     padding: 1% 5%;
 }
 section .login_title{
-    background: red;
+    display: flex;
+    padding: 40px 50px 0 50px;
 }
-section
+section .login_title h1{
+    margin: 0 0 0 30%;
+}
+section .login_title p{
+    color: red;
+    margin: auto 20px;
+}
+section .back p{
+    margin-top: 20%;
+}
+section .back input{
+    font-size: 2em;
+    width: 100%;
+}
+section .back button{
+    width: 100%;
+    height: 10%;
+    margin: 20% 0 0 0;
+}
+section a{
+    background: #FFD306;
+    text-decoration: none;
+    text-align: right;
+    width: 100%;
+}
