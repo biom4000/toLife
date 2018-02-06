@@ -38,6 +38,10 @@ section .palntrip_search input{
     text-align: center;
 }
 
+section .subjext_body{
+    height: 86.3%;
+    overflow-y: auto;
+}
 section .palntrip_subject1{
     background: #F2C94C;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

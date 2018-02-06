@@ -35,6 +35,10 @@ section .favor_search input{
     outline: none;
     text-align: center;
 }
+section .subjext_body{
+    height: 86.3%;
+    overflow-y: auto;
+}
 section .favor_subject1{
     background: #F2C94C;
     padding: 0 0 10px 0;
@@ -67,8 +71,8 @@ section .title img{
 }
 section .list{
     padding: 10px 0 5px 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
     display: flex;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
