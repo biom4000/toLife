@@ -1,9 +1,12 @@
 $(document).ready(function(){
-    $(".menu").click(function () {
-        $("nav").toggle(1000);
+    $(".login").click(function () {
+        $(".login_page").fadeIn('slow',function () {
+            $(".login_page").show();
+        });
     });
-    $(".pagename").click(function(){
-        $(".pagename").hide();
+    $(".login_close").click(function () {
+        $(".login_page").fadeOut('slow',function () {
+            $(".login_page").hidden();
+        });
     });
-
 });

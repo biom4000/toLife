@@ -123,6 +123,7 @@ nav .home img{
 }
 nav .home{
     margin-top: 30px;
+    z-index: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 nav div:hover{
@@ -148,6 +149,7 @@ nav .plantrip img{
     transition-duration: 0.5s;
 }
 nav .plantrip{
+    z-index: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 nav .plantrip div{
@@ -168,6 +170,7 @@ nav .star img{
     transition-duration: 0.5s;
 }
 nav .star{
+    z-index: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 nav .star div{
@@ -188,6 +191,7 @@ nav .thumb img{
     transition-duration: 0.5s;
 }
 nav .thumb{
+    z-index: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 nav .thumb div{
@@ -208,6 +212,7 @@ nav .email img{
     transition-duration: 0.5s;
 }
 nav .email{
+    z-index: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 nav .email div{
@@ -228,6 +233,7 @@ nav .phone img{
     transition-duration: 0.5s;
 }
 nav .phone{
+    z-index: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 nav .phone div{
@@ -248,4 +254,75 @@ section{
     left: 14%;
     width: 86%;
     height: 92%;
+}
+.login_page{
+    background: rgba(0,0,0,0.8);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    display: none;
+}
+.login_page .back{
+    background: white;
+    width: 30%;
+    height: 70%;
+    margin: 5% auto;
+    border-radius: 5px;
+    padding: 1% 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.login_page .back div{
+    position: relative;
+    top: 0;
+    left: 105%;
+    width: 50px;
+    height: 50px;
+}
+.login_page .back div img{
+
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.login_page .back div img:hover{
+    width: 45px;
+    height: 45px;
+}
+.login_page h1{
+    margin: 0 0 2% 0;
+    text-align: center;
+    font-family: 'Amaranth', sans-serif;
+}
+.login_page .back hr{
+    margin-bottom: 15%;
+}
+.login_page .back input{
+    font-size: 1.5em;
+    width: 100%;
+    margin: 2% auto;
+    padding: 5px;
+    font-family: 'Amaranth', sans-serif;
+}
+.login_page .back button{
+    width: 100%;
+    height: 10%;
+    margin: 10% 0 2% 0;
+    font-family: 'Amaranth', sans-serif;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    background: #15c877;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.login_page a{
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    margin: 0;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 0.5em;
 }
