@@ -11,17 +11,16 @@ function initMap() {
     if (navigator.geolocation)
     {
         // HTML5 定位抓取
+        var mylatlng = '24.774968, 121.027227';
+        var latlngStr = mylatlng.split(',', 2);
+        var lat = parseFloat(latlngStr[0]);
+        var lng = parseFloat(latlngStr[1]);
         navigator.geolocation.getCurrentPosition(function (position) {
-            var map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: position.coords.latitude, lng: position.coords.longitude},
-                zoom: 13
+            $('#map').tinyMap({
+                center: {x: lat, y:lng},//center: {x: position.coords.latitude, y:position.coords.longitude},
+                zoom: 10,
+                marker: [{addr: mylatlng, text: 'Test'}]
             });
-            var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-            var marker = new google.maps.Marker({
-                position: latlng,
-                map: map
-            });
-
         });
     }
 
