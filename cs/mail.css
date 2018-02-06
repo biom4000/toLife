@@ -1,7 +1,5 @@
 section .wall{
-    position: absolute;
-    top: 40px;
-    left: 180px;
+    margin: auto auto;
     display: flex;
     background: white;
     width: 70%;
