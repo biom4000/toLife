@@ -1,6 +1,3 @@
-section{
-    display: flex;
-}
 section .favor_nav{
     background: #6C6C6C;
     width: 20%;
@@ -28,7 +25,7 @@ section .favor_search img{
     margin: 5px 5px 5px 10px;
 }
 section .favor_search input{
-    width: 120px;
+    width: 70%;
     margin: 8px auto;
     border: none;
     border-bottom: 1px solid black;
@@ -39,6 +36,9 @@ section .subjext_body{
     height: 86.3%;
     overflow-y: auto;
 }
+section .subjext_body::-webkit-scrollbar{
+    display:none;
+}
 section .favor_subject1{
     background: #F2C94C;
     padding: 0 0 10px 0;
@@ -46,6 +46,21 @@ section .favor_subject1{
 }
 section .favor_subject2{
     background: #6FCF97;
+    padding: 0 0 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+section .favor_subject3{
+    background: #3188c4;
+    padding: 0 0 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+section .favor_subject4{
+    background: #b356c6;
+    padding: 0 0 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+section .favor_subject5{
+    background: #e05740;
     padding: 0 0 10px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -67,7 +82,7 @@ section .title input{
 }
 section .title img{
     width: 25px;
-    margin-left: 8px;
+    margin-left: 8%;
 }
 section .list{
     padding: 10px 0 5px 10px;
@@ -106,6 +121,33 @@ section .favor_subject2 #list2-2{
 }
 section .favor_subject2 #list2-3{
     background: #83FCB7;
+}
+section .favor_subject3 #list3-1{
+    background: #1b5696;
+}
+section .favor_subject3 #list3-2{
+    background: #1e76c4;
+}
+section .favor_subject3 #list3-3{
+    background: #1fa0ff;
+}
+section .favor_subject4 #list4-1{
+    background: #884196;
+}
+section .favor_subject4 #list4-2{
+    background: #b356c6;
+}
+section .favor_subject4 #list4-3{
+    background: #e76eff;
+}
+section .favor_subject5 #list5-1{
+    background: #963a2b;
+}
+section .favor_subject5 #list5-2{
+    background: #cb4f3a;
+}
+section .favor_subject5 #list5-3{
+    background: #ff6049;
 }
 #map {
     width: 80%;

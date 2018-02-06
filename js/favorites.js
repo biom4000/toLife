@@ -16,6 +16,12 @@ function initMap() {
                 center: {lat: position.coords.latitude, lng: position.coords.longitude},
                 zoom: 13
             });
+            var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+            var marker = new google.maps.Marker({
+                position: latlng,
+                map: map
+            });
+
         });
     }
 

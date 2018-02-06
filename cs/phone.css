@@ -1,9 +1,7 @@
-section{
-    display: flex;
-}
 section .app_download{
-    width: 500px;
-    margin: 50px 50px;
+    width: 50%;
+    height:     80%;
+    margin: auto 3%;
     background: cornflowerblue;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
