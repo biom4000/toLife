@@ -1,6 +1,6 @@
 section .favor_nav{
     background: #6C6C6C;
-    width: 20%;
+    width: 30%;
     height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -13,7 +13,6 @@ section .favor_bar img{
     width: 30px;
     height: 30px;
     margin: 0 5px;
-
 }
 section .favor_search{
     background: white;
@@ -26,7 +25,8 @@ section .favor_search img{
 }
 section .favor_search input{
     width: 70%;
-    margin: 8px auto;
+    font-size: 1.2em;
+    margin: auto 5px;
     border: none;
     border-bottom: 1px solid black;
     outline: none;
@@ -99,7 +99,7 @@ section .list input{
     background: none;
     border: none;
     border-bottom: 1px solid black;
-    width: 110px;
+    width: 70%;
     margin: 0 auto;
     outline: none;
     text-align: center;
@@ -149,8 +149,38 @@ section .favor_subject5 #list5-2{
 section .favor_subject5 #list5-3{
     background: #ff6049;
 }
-#map {
-    width: 80%;
+section .map_body{
+    width: 100%;
+}
+section .map_body #map_seatch{
+    position: relative;
+    z-index: 5;
+    left: 30%;
+    top: 5%;
+    width: 40%;
+    background: white;
+    border: 1px solid black;
+    display: flex;
+    padding: 0 10px;
+}
+section #map_seatch img{
+    width: 30px;
+    height: 30px;
+    margin: auto 0;
+}
+section #map_seatch input{
+    margin: auto 10px;
+    width: 90%;
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+section .map_body #map {
+    position: relative;
+    top: -5%;
+    width: 100%;
     height: 100%;
     background-color: grey;
 }

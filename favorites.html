@@ -15,6 +15,7 @@ and open the template in the editor.
 <link href="https://fonts.googleapis.com/css?family=Amaranth|Orbitron" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://code.google.com/apis/gears/gears_init.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOe4sObTW-KX0lOhYeYaKbFuvWBWPgkpg&libraries=places"></script>
 <script src="js/jquery.tinyMap-2.2.5.js"></script>
 <script src="js/mold.js"></script>
 <script src="js/favorites.js"></script>
@@ -162,7 +163,14 @@ and open the template in the editor.
         </div>
 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJQx7CBvByrAo_bpJuH9fYXP5EQ8keQpo&callback=initMap"></script>
-        <div id="map"></div>
+        <div class="map_body">
+            <div id="map_seatch">
+                <img src="image/ic_search_black_48px.svg" alt="miss" />
+                <input type="search" placeholder="seatch"/>
+            </div>
+            <div id="map"></div>
+        </div>
+
     </div>
 
 </section>

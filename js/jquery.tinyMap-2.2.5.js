@@ -42,7 +42,7 @@
          * Default Options
          */
         var options = $.extend({
-            center: {x: '24.774968', y: '121.027227'},
+            center: {x: '25.040083', y: '121.512028'},
             control: true,
             draggable: true,
             keyboardShortcuts: true,
