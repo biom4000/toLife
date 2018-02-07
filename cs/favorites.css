@@ -151,6 +151,7 @@ section .favor_subject5 #list5-3{
 }
 section .map_body{
     width: 100%;
+    height: 100%;
 }
 section .map_body #map_seatch{
     position: relative;
@@ -179,7 +180,7 @@ section #map_seatch input{
 }
 section .map_body #map {
     position: relative;
-    top: -5%;
+    top: -32px;
     width: 100%;
     height: 100%;
     background-color: grey;

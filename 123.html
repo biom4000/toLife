@@ -112,7 +112,7 @@
     </table>
 </div>
 
-<div style="display: none">
+<div style="display: block">
     <div id="info-content">
         <table>
             <tr id="iw-url-row" class="iw_table_row">
@@ -151,7 +151,6 @@
 
     var map, places, infoWindow;
     var markers = [];
-    var autocomplete;
     var countryRestrict = {'country': 'tw'};
     var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
     var hostnameRegexp = new RegExp('^https?://.+?/');
@@ -173,14 +172,11 @@
             streetViewControl: false
         });
 
-        infoWindow = new google.maps.InfoWindow({
-            content: document.getElementById('info-content')
-        });
 
         // Create the autocomplete object and associate it with the UI input control.
         // Restrict the search to the default country, and to place type "cities".
         autocomplete = new google.maps.places.Autocomplete(
-            /** @type {!HTMLInputElement} */ (
+            (
                 document.getElementById('autocomplete')), {
                 types: ['establishment'],
                 componentRestrictions: countryRestrict
