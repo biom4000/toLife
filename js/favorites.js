@@ -5,7 +5,7 @@ var autocomplete;
 var countryRestrict = {'country': 'tw'};
 var markers = [];
 var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
-/*
+
 $(document).ready(function(){
     $("#f_menu").click(function () {
         setTimeout(function(){
@@ -14,7 +14,7 @@ $(document).ready(function(){
         },300);
     });
 });
-*/
+
 function initMap() {
     if (navigator.geolocation)
     {
@@ -23,7 +23,7 @@ function initMap() {
             countries = {
                 'tw':{
                     center: {lat: position.coords.latitude, lng: position.coords.longitude},
-                    zoom: 9
+                    zoom: 12
                 }
             };
             map = new google.maps.Map(document.getElementById('map'), {

@@ -10,6 +10,5 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="@types/jquery" level="application" />
     <orderEntry type="library" name="@types/googlemaps" level="application" />
-    <orderEntry type="library" name="@types/google-maps" level="application" />
   </component>
 </module>
