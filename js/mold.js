@@ -11,13 +11,13 @@ $(document).ready(function(){
     });
     $(".menu").click(function () {
         if($("nav").hasClass("open_menu")){
-            $("nav").animate({width:'show'},"slow");
-            $(".gallery").animate({width:'86%'},"slow");
+            $("nav").animate({width:'show'},"fast");
+            $(".gallery").animate({width:'86%'},"fast");
             $("nav").removeClass("open_menu");
         }
         else{
-            $("nav").animate({width:'hide'},"slow");
-            $(".gallery").animate({width:'100%'},"slow");
+            $("nav").animate({width:'hide'},"fast");
+            $(".gallery").animate({width:'100%'},"fast");
             $("nav").addClass("open_menu");
         }
     });

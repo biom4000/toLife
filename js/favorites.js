@@ -1,11 +1,3 @@
-// This sample uses the Place Autocomplete widget to allow the user to search
-// for and select a place. The sample then displays an info window containing
-// the place ID and other information about the place that the user has
-// selected.
-
-// This example requires the Places library. Include the libraries=places
-// parameter when you first load the API. For example:
-// <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
 var map;
 var infowindow;
 var countries;
@@ -13,6 +5,16 @@ var autocomplete;
 var countryRestrict = {'country': 'tw'};
 var markers = [];
 var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
+/*
+$(document).ready(function(){
+    $("#f_menu").click(function () {
+        setTimeout(function(){
+            map_search_callback();  // 延遲一秒之後顯示 2
+            initMap();            // 延遲一秒之後呼叫 b 來顯示 3
+        },300);
+    });
+});
+*/
 function initMap() {
     if (navigator.geolocation)
     {
@@ -37,7 +39,9 @@ function initMap() {
             });
 
         autocomplete.addListener('place_changed', onPlaceChanged);
-
+        infowindow = new google.maps.InfoWindow({
+            content: document.getElementById('info-content')
+        });
     }
 }
 function onPlaceChanged() {
@@ -60,9 +64,11 @@ function onPlaceChanged() {
         // If the user clicks a hotel marker, show the details of that hotel
         // in an info window.
         //google.maps.event.addListener(markers[0], 'click', showInfoWindow);
-        setTimeout(dropMarker(0), 0 * 100);
+        //setTimeout(dropMarker(0), 0 * 100);
+        markers[0].setMap(map);
+        document.getElementById('autocomplete').value = '';
     } else {
-        document.getElementById('autocomplete').placeholder = 'Enter a city';
+        document.getElementById('autocomplete').placeholder = 'Search...';
     }
 }
 function clearMarkers() {
@@ -77,4 +83,15 @@ function dropMarker(i) {
     return function() {
         markers[i].setMap(map);
     };
+}
+
+function map_search_callback() {
+    if($("#map_search").hasClass("open_map")){
+        $("#map_search").animate({left:"52%"},"fast");
+        $("#map_search").removeClass("open_map");
+    }
+    else{
+        $("#map_search").animate({left:"45%"},"fast");
+        $("#map_search").addClass("open_map");
+    }
 }
