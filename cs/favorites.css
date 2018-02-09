@@ -188,3 +188,31 @@ section .map_body #map {
     height: 100%;
     background-color: grey;
 }
+#listing {
+    position: absolute;
+    width: 200px;
+    height: 470px;
+    overflow: auto;
+    left: 442px;
+    top: 0px;
+    cursor: pointer;
+    overflow-x: hidden;
+}
+.hotelIcon {
+    width: 24px;
+    height: 24px;
+}
+#resultsTable {
+    border-collapse: collapse;
+    width: 240px;
+}
+.iw_table_row {
+    height: 18px;
+}
+.iw_attribute_name {
+    font-weight: bold;
+    text-align: right;
+}
+.iw_table_icon {
+    text-align: right;
+}

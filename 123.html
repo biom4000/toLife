@@ -22,6 +22,16 @@
         #map {
             width: 440px;
         }
+        #listing {
+            position: absolute;
+            width: 200px;
+            height: 470px;
+            overflow: auto;
+            left: 442px;
+            top: 0px;
+            cursor: pointer;
+            overflow-x: hidden;
+        }
         #findhotels {
             position: absolute;
             text-align: right;
@@ -46,6 +56,10 @@
         .hotelIcon {
             width: 20px;
             height: 20px;
+        }
+        #resultsTable {
+            border-collapse: collapse;
+            width: 240px;
         }
         .iw_table_row {
             height: 18px;
@@ -72,7 +86,13 @@
 
 <div id="map"></div>
 
-<div style="display: block">
+<div id="listing">
+    <table id="resultsTable">
+        <tbody id="results"></tbody>
+    </table>
+</div>
+
+<div style="display: none">
     <div id="info-content">
         <table>
             <tr id="iw-url-row" class="iw_table_row">
@@ -162,6 +182,7 @@
     // Search for hotels in the selected city, within the viewport of the map.
     function search(){
         var place = Autocomplete.getPlace();
+        clearResults();
         clearMarkers();
         search_markers = new google.maps.Marker({
             position: place.geometry.location,
@@ -170,6 +191,33 @@
         search_markers.placeResult = place;
         google.maps.event.addListener(search_markers, 'click', showInfoWindow);
         setTimeout(dropMarker(), 0 * 100);
+        addResult(place);
+    }
+
+    function addResult(result) {
+        var results = document.getElementById('results');
+        var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
+        var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (0 % 26));
+        var markerIcon = MARKER_PATH + markerLetter + '.png';
+
+        var tr = document.createElement('tr');
+        tr.style.backgroundColor = (0 % 2 === 0 ? '#F0F0F0' : '#FFFFFF');
+        tr.onclick = function() {
+            google.maps.event.trigger(search_markers, 'click');
+        };
+
+        var iconTd = document.createElement('td');
+        var nameTd = document.createElement('td');
+        var icon = document.createElement('img');
+        icon.src = markerIcon;
+        icon.setAttribute('class', 'placeIcon');
+        icon.setAttribute('className', 'placeIcon');
+        var name = document.createTextNode(result.name);
+        iconTd.appendChild(icon);
+        nameTd.appendChild(name);
+        tr.appendChild(iconTd);
+        tr.appendChild(nameTd);
+        results.appendChild(tr);
     }
 
     function clearMarkers() {
@@ -181,6 +229,13 @@
 
     function dropMarker() {
         search_markers.setMap(map);
+    }
+
+    function clearResults() {
+        var results = document.getElementById('results');
+        while (results.childNodes[0]) {
+            results.removeChild(results.childNodes[0]);
+        }
     }
 
     // Get the place details for a hotel. Show the information in an info window,
