@@ -216,3 +216,15 @@ section .map_body #map {
 .iw_table_icon {
     text-align: right;
 }
+.iw_attribute_control{
+    background: red;
+    display: flex;
+    margin-top: 5%;
+}
+.iw_attribute_control img{
+    width: 20px;
+    height: 20px;
+}
+#info-content table{
+    background: rgba(0, 0, 0, 0.11);
+}
