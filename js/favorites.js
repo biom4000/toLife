@@ -55,7 +55,7 @@ function initMap() {
         Autocomplete = new google.maps.places.Autocomplete(
             /** @type {!HTMLInputElement} */ (
                 document.getElementById('autocomplete')), {
-                types: ['establishment'],
+                types: ['geocode'],
                 componentRestrictions: countryRestrict
             });
         places = new google.maps.places.PlacesService(map);
@@ -103,16 +103,16 @@ function addResult(result) {
         google.maps.event.trigger(search_markers, 'click');
     };
 
-    var iconTd = document.createElement('td');
+  //  var iconTd = document.createElement('td');
     var nameTd = document.createElement('td');
-    var icon = document.createElement('img');
-    icon.src = markerIcon;
-    icon.setAttribute('class', 'placeIcon');
-    icon.setAttribute('className', 'placeIcon');
+    //var icon = document.createElement('img');
+    //icon.src = markerIcon;
+   // icon.setAttribute('class', 'placeIcon');
+   // icon.setAttribute('className', 'placeIcon');
     var name = document.createTextNode(result.name);
-    iconTd.appendChild(icon);
+   // iconTd.appendChild(icon);
     nameTd.appendChild(name);
-    tr.appendChild(iconTd);
+   // tr.appendChild(iconTd);
     tr.appendChild(nameTd);
     results.appendChild(tr);
 }
@@ -151,10 +151,11 @@ function showInfoWindow() {
 
 // Load the place information into the HTML elements used by the info window.
 function buildIWContent(place) {
-    document.getElementById('iw-icon').innerHTML = '<img class="hotelIcon" ' +
-        'src="' + place.icon + '"/>';
-    document.getElementById('iw-url').innerHTML = '<b><a href="' + place.url +
-        '">' + place.name + '</a></b>';
+   // document.getElementById('iw-icon').innerHTML = '<img class="hotelIcon" ' +
+     //   'src="' + place.icon + '"/>';
+   // document.getElementById('iw-url').innerHTML = '<b><a href="' + place.url +
+    //    '">' + place.name + '</a></b>';
+    document.getElementById('iw-url').innerHTML = '<b><p>' + place.name + '</p></b>';
     document.getElementById('iw-address').textContent = place.vicinity;
 
     if (place.formatted_phone_number) {
@@ -176,7 +177,7 @@ function buildIWContent(place) {
             } else {
                 ratingHtml += '&#10029;';
             }
-            document.getElementById('iw-rating-row').style.display = '';
+           // document.getElementById('iw-rating-row').style.display = '';
             document.getElementById('iw-rating').innerHTML = ratingHtml;
         }
     } else {
