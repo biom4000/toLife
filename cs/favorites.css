@@ -230,6 +230,7 @@ section .map_body #map {
 }
 #info-content table{
     background: rgba(0, 0, 0, 0.11);
+    min-width: 100px;
 }
 #iw-url_title{
 

@@ -52,7 +52,7 @@ function initMap() {
 
         input = document.getElementById('autocomplete');
         searchBox = new google.maps.places.SearchBox(input);
-        map.controls[google.maps.ControlPosition.TOP_CENTER].push(input);
+        //map.controls[google.maps.ControlPosition.TOP_CENTER].push(input);
 
         // Bias the SearchBox results towards current map's viewport.
         map.addListener('bounds_changed', function() {
@@ -205,7 +205,9 @@ function buildIWContent(place) {
 
 function search_callback() {
     var places = searchBox.getPlaces();
+    var cont=0;
 
+    clearResults();
     if (places.length == 0) {
         return;
     }
@@ -230,10 +232,10 @@ function search_callback() {
             title: place.name,
             position: place.geometry.location
         }));
-        for(var cont=0;cont<markers.length;cont++){
-            markers[cont].placeResult = place;
-            google.maps.event.addListener(markers[cont], 'click', showInfoWindow);
-        }
+
+        markers[cont].placeResult = place;
+        google.maps.event.addListener(markers[cont], 'click', showInfoWindow);
+        cont++;
 
         if (place.geometry.viewport) {
             // Only geocodes have viewport.
@@ -242,5 +244,6 @@ function search_callback() {
             bounds.extend(place.geometry.location);
         }
     });
+    cont=0;
     map.fitBounds(bounds);
 }
