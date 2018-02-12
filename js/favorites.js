@@ -50,17 +50,20 @@ function initMap() {
             content: document.getElementById('info-content')
         });
 
-        // Create the autocomplete object and associate it with the UI input control.
-        // Restrict the search to the default country, and to place type "cities".
-        Autocomplete = new google.maps.places.Autocomplete(
-            /** @type {!HTMLInputElement} */ (
-                document.getElementById('autocomplete')), {
-                types: ['geocode'],
-                componentRestrictions: countryRestrict
-            });
-        places = new google.maps.places.PlacesService(map);
+        input = document.getElementById('autocomplete');
+        searchBox = new google.maps.places.SearchBox(input);
+        map.controls[google.maps.ControlPosition.TOP_CENTER].push(input);
 
-        Autocomplete.addListener('place_changed', onPlaceChanged);
+        // Bias the SearchBox results towards current map's viewport.
+        map.addListener('bounds_changed', function() {
+            searchBox.setBounds(map.getBounds());
+        });
+
+        markers = [];
+
+        places = new google.maps.places.PlacesService(map);
+        searchBox.addListener('places_changed', search_callback);
+        //Autocomplete.addListener('place_changed', onPlaceChanged);
     });
 }
 // When the user selects a city, get the place details for the city and
@@ -198,4 +201,46 @@ function buildIWContent(place) {
     } else {
         document.getElementById('iw-website-row').style.display = 'none';
     }
+}
+
+function search_callback() {
+    var places = searchBox.getPlaces();
+
+    if (places.length == 0) {
+        return;
+    }
+
+    // Clear out the old markers.
+    markers.forEach(function(marker) {
+        marker.setMap(null);
+    });
+    markers = [];
+
+    // For each place, get the icon, name and location.
+    var bounds = new google.maps.LatLngBounds();
+    places.forEach(function(place) {
+        if (!place.geometry) {
+            console.log("Returned place contains no geometry");
+            return;
+        }
+
+        // Create a marker for each place.
+        markers.push(new google.maps.Marker({
+            map: map,
+            title: place.name,
+            position: place.geometry.location
+        }));
+        for(var cont=0;cont<markers.length;cont++){
+            markers[cont].placeResult = place;
+            google.maps.event.addListener(markers[cont], 'click', showInfoWindow);
+        }
+
+        if (place.geometry.viewport) {
+            // Only geocodes have viewport.
+            bounds.union(place.geometry.viewport);
+        } else {
+            bounds.extend(place.geometry.location);
+        }
+    });
+    map.fitBounds(bounds);
 }
