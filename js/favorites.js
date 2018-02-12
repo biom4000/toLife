@@ -12,7 +12,28 @@ $(document).ready(function(){
             map_updata();            // 延遲一秒之後呼叫 b 來顯示 3
         },300);
     });
+
+    $("#favor_nav_lock").click(function () {
+        setTimeout(function(){
+            favor_nav_key();  // 延遲一秒之後顯示 2
+            map_updata();            // 延遲一秒之後呼叫 b 來顯示 3
+        },300);
+    });
 });
+
+function favor_nav_key() {
+    if($(".favor_nav").hasClass("open_favor_menu")){
+        $(".favor_nav").animate({width:'show'},"fast");
+        // $(".map_body").animate({width:'75%'},"fast");
+        $(".favor_nav").removeClass("open_favor_menu");
+    }
+    else{
+        $(".favor_nav").animate({width:'hide'},"fast");
+        // $(".map_body").animate({width:'100%'},"fast");
+        $(".favor_nav").addClass("open_favor_menu");
+        $(".favor_nav_lock_open").css("display","block");
+    }
+}
 
 function map_search_callback() {
     if($("#map_search").hasClass("open_map")){
@@ -30,7 +51,7 @@ function map_updata() {
         center: countries['tw'].center,
     });
 
-    onPlaceChanged();
+    //onPlaceChanged();
 }
 
 
@@ -162,7 +183,7 @@ function buildIWContent(place) {
     document.getElementById('iw-address').textContent = place.vicinity;
 
     if (place.formatted_phone_number) {
-        document.getElementById('iw-phone-row').style.display = '';
+        document.getElementById('iw-phone').style.display = '';
         document.getElementById('iw-phone').textContent =
             place.formatted_phone_number;
     } else {
@@ -180,7 +201,7 @@ function buildIWContent(place) {
             } else {
                 ratingHtml += '&#10029;';
             }
-           // document.getElementById('iw-rating-row').style.display = '';
+            document.getElementById('iw-rating').style.display = '';
             document.getElementById('iw-rating').innerHTML = ratingHtml;
         }
     } else {
@@ -196,7 +217,7 @@ function buildIWContent(place) {
             website = 'http://' + place.website + '/';
             fullUrl = website;
         }
-        document.getElementById('iw-website-row').style.display = '';
+        document.getElementById('iw-website').style.display = '';
         document.getElementById('iw-website').textContent = website;
     } else {
         document.getElementById('iw-website').style.display = 'none';

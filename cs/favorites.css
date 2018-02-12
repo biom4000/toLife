@@ -1,6 +1,6 @@
 section .favor_nav{
     background: #6C6C6C;
-    width: 30%;
+    width: 25%;
     height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -13,6 +13,9 @@ section .favor_bar img{
     width: 30px;
     height: 30px;
     margin: 0 5px;
+}
+section .favor_bar img:hover{
+    cursor: pointer;
 }
 section .favor_search{
     background: white;
@@ -222,19 +225,34 @@ section .map_body #map {
 }
 .iw_attribute_control{
     display: flex;
-    margin: 5% 0 0 0;
+    height: 30px;
 }
 .iw_attribute_control img{
     width: 20px;
     height: 20px;
+    margin: auto 0;
+}
+.iw_attribute_control img:hover{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
 }
 #info-content table{
     background: rgba(0, 0, 0, 0.11);
-    min-width: 100px;
-}
-#iw-url_title{
-
+    min-width: 200px;
 }
 #iw-rating{
     margin: 0;
+}
+.favor_nav_lock_open{
+    cursor: pointer;
+    z-index: 5;
+    width: 20px;
+    height: 70px;
+    display: none;
+    margin-top: 7%;
+    position: absolute;
+    background: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
