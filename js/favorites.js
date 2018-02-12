@@ -166,7 +166,7 @@ function buildIWContent(place) {
         document.getElementById('iw-phone').textContent =
             place.formatted_phone_number;
     } else {
-        document.getElementById('iw-phone-row').style.display = 'none';
+        document.getElementById('iw-phone').style.display = 'none';
     }
 
     // Assign a five-star rating to the hotel, using a black star ('&#10029;')
@@ -184,7 +184,7 @@ function buildIWContent(place) {
             document.getElementById('iw-rating').innerHTML = ratingHtml;
         }
     } else {
-        document.getElementById('iw-rating-row').style.display = 'none';
+        document.getElementById('iw-rating').style.display = 'none';
     }
 
     // The regexp isolates the first part of the URL (domain plus subdomain)
@@ -199,7 +199,7 @@ function buildIWContent(place) {
         document.getElementById('iw-website-row').style.display = '';
         document.getElementById('iw-website').textContent = website;
     } else {
-        document.getElementById('iw-website-row').style.display = 'none';
+        document.getElementById('iw-website').style.display = 'none';
     }
 }
 
@@ -207,7 +207,6 @@ function search_callback() {
     var places = searchBox.getPlaces();
     var cont=0;
 
-    clearResults();
     if (places.length == 0) {
         return;
     }
