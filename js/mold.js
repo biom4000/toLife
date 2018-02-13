@@ -15,24 +15,23 @@ $(document).ready(function(){
             $("nav").animate({width:'show'},"fast");
             $(".gallery").animate({width:'86%'},"fast");
             $("nav").removeClass("open_menu");
-            if($(".gallery_nav_open").hasClass("lock_out")){
-                $(".calendar_title").css("padding","0 5%");
+            if($(".gallery_nav_lock").hasClass("lock_out")){
+                $(".calendar_title").animate({paddingLeft: "18%"},"fast");
             }
             else {
-                $(".calendar_title").css("padding-left","18%");
+                $(".calendar_title").animate({padding: "0 5%"},"fast");
             }
         }
         else{
             $("#map_search").animate({left:"45%"},"fast");
-            $(".calendar_title").css("padding-left","22%");
             $("nav").animate({width:'hide'},"fast");
             $(".gallery").animate({width:'100%'},"fast");
             $("nav").addClass("open_menu");
-            if($(".gallery_nav_lock").hasClass("lock_in")){
-                $(".calendar_title").css("padding-left","22%");
+            if($(".gallery_nav_open").hasClass("lock_in")){
+                $(".calendar_title").animate({paddingLeft: "22%"},"fast");
             }
             else {
-                $(".calendar_title").css("padding-left","10%");
+                $(".calendar_title").animate({paddingLeft: "10%"},"fast");
             }
         }
     });
