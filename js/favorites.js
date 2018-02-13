@@ -5,13 +5,19 @@ var hostnameRegexp = new RegExp('^https?://.+?/');
 var countries;
 
 $(document).ready(function(){
-    $("#f_menu").click(function () {
+    $(".menu").click(function () {
         setTimeout(function(){
             //map_search_callback();  // 延遲一秒之後顯示 2
             map_updata();            // 延遲一秒之後呼叫 b 來顯示 3
         },200);
     });
-    $("#favor_nav_lock").click(function () {
+    $(".gallery_nav_lock").click(function () {
+        setTimeout(function(){
+            //map_search_callback();  // 延遲一秒之後顯示 2
+            map_updata();            // 延遲一秒之後呼叫 b 來顯示 3
+        },200);
+    });
+    $(".gallery_nav_open").click(function () {
         setTimeout(function(){
             //map_search_callback();  // 延遲一秒之後顯示 2
             map_updata();            // 延遲一秒之後呼叫 b 來顯示 3

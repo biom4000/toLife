@@ -1,9 +1,6 @@
-section{
-    display: flex;
-}
-section .palntrip_nav{
+section .gallery_nav{
     background: #6C6C6C;
-    width: 20%;
+    width: 25%;
     height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -15,7 +12,7 @@ section .palntrip_bar{
 section .palntrip_bar img{
     cursor: pointer;
 }
-section .palntrip_nav img{
+section .gallery_nav img{
     width: 30px;
     height: 30px;
     margin: 0 5px;
@@ -93,41 +90,42 @@ section .list_bar2 img{
     margin: 0 auto;
     cursor: pointer;
 }
-section .calendar {
-    width: 80%;
+section .map_body {
+    width: 100%;
     height: 100%;
     background-color: grey;
 }
 section .calendar_back{
     background: white;
-    margin: 3% 6%;
-    height: 90%;
+    margin: 0 auto;
+    padding: 1px;
+    height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-section .calendar table,th,tr,td{
+section .map_body table,th,tr,td{
     border: 1px solid black;
     border-collapse: collapse;
 }
-section .calendar table{
+section .map_body table{
     width: 100%;
     height: 88.5%;
     font-family: 'Amaranth', sans-serif;
 }
-section .calendar th{
+section .map_body th{
     background: #56CCF2;
     color: white;
     border-color: white;
     letter-spacing: 2px;
 }
-section .calendar td{
+section .map_body td{
     height: 19%;
     vertical-align: top;
     padding: 10px;
 }
-section .calendar .holiday{
+section .map_body .holiday{
     width: 15%;
 }
-section .calendar .weekday{
+section .map_body .weekday{
     width: 14%;
 }
 section .calendar_title{
@@ -170,4 +168,16 @@ section .title_seartch input{
     margin: auto 10px;
     border: none;
     border-bottom: 1px solid black;
+}
+.gallery_nav_open{
+    cursor: pointer;
+    z-index: 5;
+    width: 20px;
+    height: 70px;
+    display: none;
+    margin-top: 7%;
+    position: absolute;
+    background: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
