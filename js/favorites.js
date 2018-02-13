@@ -1,59 +1,31 @@
 var map, places, infoWindow;
 var search_markers;
 var Autocomplete;
-var countryRestrict = {'country': 'tw'};
 var hostnameRegexp = new RegExp('^https?://.+?/');
 var countries;
 
 $(document).ready(function(){
     $("#f_menu").click(function () {
         setTimeout(function(){
-            map_search_callback();  // 延遲一秒之後顯示 2
+            //map_search_callback();  // 延遲一秒之後顯示 2
             map_updata();            // 延遲一秒之後呼叫 b 來顯示 3
-        },300);
+        },200);
     });
-
     $("#favor_nav_lock").click(function () {
         setTimeout(function(){
-            favor_nav_key();  // 延遲一秒之後顯示 2
+            //map_search_callback();  // 延遲一秒之後顯示 2
             map_updata();            // 延遲一秒之後呼叫 b 來顯示 3
-        },300);
+        },200);
     });
 });
 
-function favor_nav_key() {
-    if($(".favor_nav").hasClass("open_favor_menu")){
-        $(".favor_nav").animate({width:'show'},"fast");
-        // $(".map_body").animate({width:'75%'},"fast");
-        $(".favor_nav").removeClass("open_favor_menu");
-    }
-    else{
-        $(".favor_nav").animate({width:'hide'},"fast");
-        // $(".map_body").animate({width:'100%'},"fast");
-        $(".favor_nav").addClass("open_favor_menu");
-        $(".favor_nav_lock_open").css("display","block");
-    }
-}
-
-function map_search_callback() {
-    if($("#map_search").hasClass("open_map")){
-        $("#map_search").animate({left:"52%"},"fast");
-        $("#map_search").removeClass("open_map");
-    }
-    else{
-        $("#map_search").animate({left:"45%"},"fast");
-        $("#map_search").addClass("open_map");
-    }
-}
 function map_updata() {
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: countries['tw'].zoom,
         center: countries['tw'].center,
     });
-
     //onPlaceChanged();
 }
-
 
 function initMap() {
     navigator.geolocation.getCurrentPosition(function (position) {
@@ -115,28 +87,28 @@ function search(){
     addResult(place);
 }
 
-function addResult(result) {
+function addResult(result,i) {
     var results = document.getElementById('results');
     var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
-    var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (0 % 26));
+    var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
     var markerIcon = MARKER_PATH + markerLetter + '.png';
 
     var tr = document.createElement('tr');
-    tr.style.backgroundColor = (0 % 2 === 0 ? '#F0F0F0' : '#FFFFFF');
+    tr.style.backgroundColor = (i % 2 === 0 ? '#F0F0F0' : '#FFFFFF');
     tr.onclick = function() {
-        google.maps.event.trigger(search_markers, 'click');
+        google.maps.event.trigger(markers[i], 'click');
     };
 
-  //  var iconTd = document.createElement('td');
+    var iconTd = document.createElement('td');
     var nameTd = document.createElement('td');
-    //var icon = document.createElement('img');
-    //icon.src = markerIcon;
-   // icon.setAttribute('class', 'placeIcon');
-   // icon.setAttribute('className', 'placeIcon');
+    var icon = document.createElement('img');
+    icon.src = markerIcon;
+    icon.setAttribute('class', 'placeIcon');
+    icon.setAttribute('className', 'placeIcon');
     var name = document.createTextNode(result.name);
-   // iconTd.appendChild(icon);
+    iconTd.appendChild(icon);
     nameTd.appendChild(name);
-   // tr.appendChild(iconTd);
+    tr.appendChild(iconTd);
     tr.appendChild(nameTd);
     results.appendChild(tr);
 }
@@ -231,7 +203,7 @@ function search_callback() {
     if (places.length == 0) {
         return;
     }
-
+    clearResults();
     // Clear out the old markers.
     markers.forEach(function(marker) {
         marker.setMap(null);
@@ -263,6 +235,7 @@ function search_callback() {
         } else {
             bounds.extend(place.geometry.location);
         }
+        addResult(place,cont);
     });
     cont=0;
     map.fitBounds(bounds);
