@@ -250,9 +250,8 @@ section .map_body #map {
     width: 20px;
     height: 70px;
     display: none;
-    margin-top: 7%;
     position: absolute;
-    background: #ffffff;
+    background: white;
     border-radius: 2px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

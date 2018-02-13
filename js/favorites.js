@@ -29,6 +29,8 @@ function map_updata() {
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: countries['tw'].zoom,
         center: countries['tw'].center,
+        mapTypeControl: false,
+        panControl: false
     });
     //onPlaceChanged();
 }
@@ -44,6 +46,8 @@ function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
             zoom: countries['tw'].zoom,
             center: countries['tw'].center,
+            mapTypeControl: false,
+            panControl: false
         });
         infoWindow = new google.maps.InfoWindow({
             content: document.getElementById('info-content')
