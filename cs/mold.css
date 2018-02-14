@@ -98,12 +98,14 @@ nav{
     background: #BDBDBD;
     width: 14%;
     height: 100%;
+    overflow-x: hidden;
 }
 nav div{
     font-size: 1em;
     border-radius: 2px;
     background: white;
-    margin: 15px 25px;
+    margin: 15px auto;
+    width: 130px;
     text-align: center;
     display: flex;
     font-family: 'Amaranth', sans-serif;
@@ -125,8 +127,9 @@ nav .home{
 }
 nav div:hover{
     background: #FFD306;
-    margin: 10px 10px;
-    padding: 10px 0;
+    width: 140px;
+    padding: 5px;
+    margin: 10px auto;
 }
 nav .home:hover img{
     width: 45px;
@@ -156,7 +159,7 @@ nav .plantrip div{
 }
 nav .plantrip:hover img{
     width: 45px;
-    margin-left: 15px;
+    margin-left: 10px;
     transition-duration: 0.5s;
 }
 
@@ -177,7 +180,7 @@ nav .star div{
 }
 nav .star:hover img{
     width: 45px;
-    margin-left: 15px;
+    margin-left: 8px;
     transition-duration: 0.5s;
 }
 
@@ -198,7 +201,7 @@ nav .thumb div{
 }
 nav .thumb:hover img{
     width: 45px;
-    margin-left: 15px;
+    margin-left: 10px;
     transition-duration: 0.5s;
 }
 
@@ -219,7 +222,7 @@ nav .email div{
 }
 nav .email:hover img{
     width: 45px;
-    margin-left: 15px;
+    margin-left: 10px;
     transition-duration: 0.5s;
 }
 
@@ -240,7 +243,7 @@ nav .phone div{
 }
 nav .phone:hover img{
     width: 45px;
-    margin-left: 15px;
+    margin-left: 10px;
     transition-duration: 0.5s;
 }
 
