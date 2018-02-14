@@ -7,4 +7,12 @@ $(function(){
             $(this).text(text);
         }
     });
+    appendText();
 });
+
+function appendText()
+{
+    var txt1="<img src='blog_date/poto/Hydrangeas.jpg'>";               // 以 HTML 创建新元素
+    $("#blog_image2").append(txt1);         // 追加新元素
+    $("#blog_image2").css({width: "100%",height: "100%"});
+}
