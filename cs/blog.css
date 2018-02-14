@@ -1,8 +1,11 @@
 section .blog_wall{
-    width: 95%;
-    height: 95%;
-    margin: auto auto;
-    overflow: hidden;: hidden;
+    width: 100%;
+    height: 100%;
+    background: #FFD306;
+    overflow: auto;
+}
+section .blog_wall::-webkit-scrollbar{
+    display:none;
 }
 section .blog_page button{
     background: #F2F2F2;
@@ -10,11 +13,12 @@ section .blog_page button{
     cursor: pointer;
     font-family: 'Amaranth', sans-serif;
 }
+.blog_page{
+    padding: 50px 15px;
+}
 section .blog_content{
     background: white;
-    height: 90%;
-    margin: 10px 0;
-    overflow: hidden;
+    margin: 0;
 }
 section .blog_list{
     background: #828282;
@@ -37,6 +41,8 @@ section .blog_user{
     font-family: 'Amaranth', sans-serif;
 }
 section .pic_card{
+    width: 100%;
+    height: 100%;
     border-color: rgba(0, 0, 0, 0.3);
     display: flex;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -61,27 +67,21 @@ section #pic_card5{
     border-style: none solid solid none;
     border-width: 1px;
 }
-section .pic_card img{
-    width: 200px;
-    height: 120px;
-    margin: 5px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
-}
-section .pic_card div h4 span{
+section .blog_description p{
     font-size: 0.5em;
     color: #F2994A;
 }
-section .pic_card h4{
-    margin: 8px 10px;
+section .blog_description h4{
+    margin: 8px 0;
     font-size: 1.4em;
     color: #2F80ED;
 }
 section .text_area{
     font-size: 0.8em;
 }
-section .pic_card div{
-    padding: 0 5px 10px 10px;
-    width: 300px;
+section .pic_card .blog_description{
+    margin: auto 5px;
+    width: 45%;
 }
 a{
     text-decoration: none;
@@ -91,4 +91,11 @@ hr{
     border-top: 3px double black;
     width: 97%;
     margin: 0 auto;
+}
+.blog_image{
+    background: red;
+    width: 55%;
+    height: 180px;
+    margin: 10px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
 }

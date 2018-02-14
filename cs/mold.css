@@ -127,9 +127,9 @@ nav .home{
 }
 nav div:hover{
     background: #FFD306;
-    width: 140px;
+    width: 150px;
     padding: 5px;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 nav .home:hover img{
     width: 45px;
