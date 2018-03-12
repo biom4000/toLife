@@ -12,6 +12,7 @@ section .blog_page button{
     border: 1px solid black;
     cursor: pointer;
     font-family: 'Amaranth', sans-serif;
+    padding: 5px 10px;
 }
 .blog_page{
     padding: 50px 15px;
@@ -28,7 +29,11 @@ section .blog_list{
     font-family: 'Righteous', cursive;
 }
 section .location{
-    margin: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+section .location:hover{
+    background: #9d9d9d;
 }
 section .blog_title h2{
     margin: 10px 20px;
@@ -46,44 +51,6 @@ section .pic_card{
     border-color: rgba(0, 0, 0, 0.3);
     display: flex;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-section #pic_card1{
-    border-style: none solid solid none;
-    border-width: 1px;
-}
-section #pic_card2{
-    border-style: none none solid none;
-    border-width: 1px;
-}
-section #pic_card3{
-    border-style: none solid solid none;
-    border-width: 1px;
-}
-section #pic_card4{
-    border-style: none none solid none;
-    border-width: 1px;
-}
-section #pic_card5{
-    border-style: none solid solid none;
-    border-width: 1px;
-}
-section #pic_card6{
-    border-style: none solid solid none;
-    border-width: 1px;
-}
-section #pic_card7{
-    border-style: none solid solid none;
-    border-width: 1px;
-}
-section #pic_card8{
-    border-style: none solid solid none;
-    border-width: 1px;
-}
-section #pic_card9{
-    border-style: none solid solid none;
-    border-width: 1px;
-}
-section #pic_card10{
     border-style: none solid solid none;
     border-width: 1px;
 }
@@ -96,6 +63,7 @@ section .blog_description h4{
     font-size: 1.4em;
     color: #2F80ED;
 }
+
 section .text_area{
     font-size: 0.8em;
 }
@@ -116,6 +84,10 @@ hr{
     width: 55%;
     height: 180px;
     margin: 10px;
+    cursor: pointer;
+}
+.blog_image:hover{
+    opacity: 0.5;
 }
 .blog_list_start:hover{
     background: #e0e0e0;
@@ -131,4 +103,8 @@ hr{
 }
 .page:hover{
     background: #e0e0e0;
+}
+
+.article_title{
+    padding: ;
 }
