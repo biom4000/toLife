@@ -104,7 +104,7 @@ hr{
 .page:hover{
     background: #e0e0e0;
 }
-
-.article_title{
-    padding: ;
+.article_title h2{
+    margin: 20px 20px;
+    font-family: 'Amaranth', sans-serif;
 }
