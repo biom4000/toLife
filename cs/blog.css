@@ -67,6 +67,26 @@ section #pic_card5{
     border-style: none solid solid none;
     border-width: 1px;
 }
+section #pic_card6{
+    border-style: none solid solid none;
+    border-width: 1px;
+}
+section #pic_card7{
+    border-style: none solid solid none;
+    border-width: 1px;
+}
+section #pic_card8{
+    border-style: none solid solid none;
+    border-width: 1px;
+}
+section #pic_card9{
+    border-style: none solid solid none;
+    border-width: 1px;
+}
+section #pic_card10{
+    border-style: none solid solid none;
+    border-width: 1px;
+}
 section .blog_description p{
     font-size: 0.5em;
     color: #F2994A;
@@ -93,9 +113,7 @@ hr{
     margin: 0 auto;
 }
 .blog_image{
-    background: red;
     width: 55%;
     height: 180px;
     margin: 10px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19);
 }
