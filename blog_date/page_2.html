@@ -207,15 +207,15 @@ and open the template in the editor.
     </div>
 
     <div class="blog_page">
-        <button class="start_end">First</button>
-        <button class="last_next">Last</button>
+        <button class="blog_list_start">First</button>
+        <button class="blog_list_last">Last</button>
         <button class="page" id="page1">1</button>
         <button class="page" id="page2">2</button>
         <button class="page" id="page3">3</button>
         <button class="page" id="page4">4</button>
         <button class="page" id="page5">5</button>
-        <button class="last_next">Next</button>
-        <button class="start_end">End</button>
+        <button class="blog_list_next">Next</button>
+        <button class="blog_list_end">End</button>
     </div>
 
     <script>
@@ -253,9 +253,8 @@ and open the template in the editor.
         $("#page1").click(function () {
             $(".blog_content").load("blog_date/page_1.html");
         })
-        $("#page2").click(function () {
-            $(".blog_content").load("blog_date/page_2.html");
-        })
+        $("#page2").css({"color":"white",
+                        "background":"black"});
         $("#page3").click(function () {
             $(".blog_content").load("blog_date/page_3.html");
         })
@@ -265,6 +264,19 @@ and open the template in the editor.
         $("#page5").click(function () {
             $(".blog_content").load("blog_date/page_5.html");
         })
+        $(".blog_list_start").click(function () {
+            $(".blog_content").load("blog_date/page_1.html");
+        })
+        $(".blog_list_end").click(function () {
+            $(".blog_content").load("blog_date/page_5.html");
+        })
+        $(".blog_list_last").click(function () {
+            $(".blog_content").load("blog_date/page_1.html");
+        })
+        $(".blog_list_next").click(function () {
+            $(".blog_content").load("blog_date/page_3.html");
+        })
+
     </script>
 </body>
 </html>

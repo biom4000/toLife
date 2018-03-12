@@ -117,3 +117,18 @@ hr{
     height: 180px;
     margin: 10px;
 }
+.blog_list_start:hover{
+    background: #e0e0e0;
+}
+.blog_list_end:hover{
+    background: #e0e0e0;
+}
+.blog_list_last:hover{
+    background: #e0e0e0;
+}
+.blog_list_next:hover{
+    background: #e0e0e0;
+}
+.page:hover{
+    background: #e0e0e0;
+}
