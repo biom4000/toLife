@@ -74,7 +74,7 @@ section .pic_card .blog_description{
 a{
     text-decoration: none;
 }
-hr{
+.blog_title hr{
     border: none;
     border-top: 3px double black;
     width: 97%;
@@ -109,5 +109,19 @@ hr{
     font-family: 'Amaranth', sans-serif;
 }
 .article_user{
-    margin: 10px 20px;
+    margin: 0 10%;
+    height: 100%;
+}
+.article_poto{
+    width: 100%;
+}
+.article_user p{
+    line-height: 20px;
+    text-indent: 2em;
+}
+.article_title hr{
+    border: none;
+    border-top: 3px double black;
+    width: 97%;
+    margin: 0 auto;
 }
