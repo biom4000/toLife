@@ -21,20 +21,6 @@ section .blog_content{
     background: white;
     margin: 0;
 }
-section .blog_list{
-    background: #828282;
-    display: flex;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: white;
-    font-family: 'Righteous', cursive;
-}
-section .location{
-    padding: 20px;
-    cursor: pointer;
-}
-section .location:hover{
-    background: #9d9d9d;
-}
 section .blog_title h2{
     margin: 10px 20px;
     font-family: 'Amaranth', sans-serif;
@@ -124,4 +110,45 @@ a{
     border-top: 3px double black;
     width: 97%;
     margin: 0 auto;
+}
+.article_end{
+    text-align: center;
+    font-size: 0.8em;
+    background: #c6b217;
+    border-top: 1px solid black;
+}
+section .blog_list{
+    background: #828282;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+section .location{
+    padding: 20px;
+    cursor: pointer;
+}
+section .location:hover{
+    background: #9d9d9d;
+}
+.blog_position{
+    cursor: pointer;
+}
+.blog_sub li:hover{
+    background: #bababa;
+}
+.blog_sub li{
+    padding: 10px 0;
+    border-top: 1px solid white;
+}
+.blog_sub ul{
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    list-style: none;
+    text-align: center;
+    background: #9d9d9d;
+    color: white;
+    position: absolute;
+    display: none;
 }

@@ -13,12 +13,76 @@ and open the template in the editor.
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <body>
     <div class="blog_list">
-        <div class="location">TaiwanEast</div>
-        <div class="location">TaiwanWest</div>
-        <div class="location">TaiwanSouth</div>
-        <div class="location">TaiwanNorth</div>
-        <div class="location">TaiwanIslands</div>
-        <div class="location">Overseas</div>
+        <div class="blog_position">
+            <div class="location" id="location_east">TaiwanEast</div>
+            <div class="blog_sub" id="sub_east">
+                <ul>
+                    <li>Hualien</li>
+                    <li>Taitung</li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog_position">
+            <div class="location" id="location_central">TaiwanCentral</div>
+            <div class="blog_sub" id="sub_central">
+                <ul>
+                    <li>Taichung</li>
+                    <li>Nantou</li>
+                    <li>Changhua</li>
+                    <li>Yunlin</li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog_position">
+            <div class="location" id="location_south">TaiwanSouth</div>
+            <div class="blog_sub" id="sub_south">
+                <ul>
+                    <li>Chiayi</li>
+                    <li>Tainan</li>
+                    <li>Kaohsiung</li>
+                    <li>Pingtung</li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog_position">
+            <div class="location" id="location_north">TaiwanNorth</div>
+            <div class="blog_sub" id="sub_north">
+                <ul>
+                    <li>Keelung</li>
+                    <li>Ilan</li>
+                    <li>Taipei</li>
+                    <li>Taoyuan</li>
+                    <li>Hsinchu</li>
+                    <li>Miaoli</li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog_position">
+            <div class="location" id="location_islands">TaiwanIslands</div>
+            <div class="blog_sub" id="sub_islands">
+                <ul>
+                    <li>Keelung</li>
+                    <li>Ilan</li>
+                    <li>Taipei</li>
+                    <li>Taoyuan</li>
+                    <li>Hsinchu</li>
+                    <li>Miaoli</li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog_position">
+            <div class="location" id="location_overseas">Overseas</div>
+            <div class="blog_sub" id="sub_overseas">
+                <ul>
+                    <li>Keelung</li>
+                    <li>Ilan</li>
+                    <li>Taipei</li>
+                    <li>Taoyuan</li>
+                    <li>Hsinchu</li>
+                    <li>Miaoli</li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div class="blog_title">
         <h2>Keelung</h2>
@@ -277,6 +341,28 @@ and open the template in the editor.
         $(".blog_list_next").click(function () {
             $(".blog_content").load("blog_date/page_2.html");
         });
+
+        $("#location_east").hover(function () {
+            $("#sub_east ul").slideDown('fast');
+        },function () {
+            $("#sub_east ul").slideUp('fast');
+        });
+        $("#location_central").hover(function () {
+            $("#sub_central ul").slideDown('fast');
+        },function () {
+            $("#sub_central ul").slideUp('fast');
+        });
+        $("#location_south").hover(function () {
+            $("#sub_south ul").slideDown('fast');
+        },function () {
+            $("#sub_south ul").slideUp('fast');
+        });
+        $("#location_north").hover(function () {
+            $("#sub_north ul").slideDown('fast');
+        },function () {
+            $("#sub_north ul").slideUp('fast');
+        });
+
 
     </script>
 </body>
