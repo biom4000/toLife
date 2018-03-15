@@ -61,12 +61,12 @@ and open the template in the editor.
             <div class="location" id="location_islands">TaiwanIslands</div>
             <div class="blog_sub" id="sub_islands">
                 <ul>
-                    <li>Keelung</li>
-                    <li>Ilan</li>
-                    <li>Taipei</li>
-                    <li>Taoyuan</li>
-                    <li>Hsinchu</li>
-                    <li>Miaoli</li>
+                    <li>Lanyu</li>
+                    <li>Green Island</li>
+                    <li>Small ball</li>
+                    <li>Wuhu</li>
+                    <li>Quemoy</li>
+                    <li>Matsu</li>
                 </ul>
             </div>
         </div>
@@ -74,12 +74,7 @@ and open the template in the editor.
             <div class="location" id="location_overseas">Overseas</div>
             <div class="blog_sub" id="sub_overseas">
                 <ul>
-                    <li>Keelung</li>
-                    <li>Ilan</li>
-                    <li>Taipei</li>
-                    <li>Taoyuan</li>
-                    <li>Hsinchu</li>
-                    <li>Miaoli</li>
+                    <li>....</li>
                 </ul>
             </div>
         </div>
@@ -362,7 +357,16 @@ and open the template in the editor.
         },function () {
             $("#sub_north ul").slideUp('fast');
         });
-
+        $("#location_islands").hover(function () {
+            $("#sub_islands ul").slideDown('fast');
+        },function () {
+            $("#sub_islands ul").slideUp('fast');
+        });
+        $("#location_overseas").hover(function () {
+            $("#sub_overseas ul").slideDown('fast');
+        },function () {
+            $("#sub_overseas ul").slideUp('fast');
+        });
 
     </script>
 </body>

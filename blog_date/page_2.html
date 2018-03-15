@@ -18,7 +18,71 @@ and open the template in the editor.
         <div class="location">TaiwanSouth</div>
         <div class="location">TaiwanNorth</div>
         <div class="location">TaiwanIslands</div>
-        <div class="location">Overseas</div>
+        <div class="location">Overseas</div><div class="blog_position">
+        <div class="location" id="location_east">TaiwanEast</div>
+        <div class="blog_sub" id="sub_east">
+            <ul>
+                <li>Hualien</li>
+                <li>Taitung</li>
+            </ul>
+        </div>
+    </div>
+        <div class="blog_position">
+            <div class="location" id="location_central">TaiwanCentral</div>
+            <div class="blog_sub" id="sub_central">
+                <ul>
+                    <li>Taichung</li>
+                    <li>Nantou</li>
+                    <li>Changhua</li>
+                    <li>Yunlin</li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog_position">
+            <div class="location" id="location_south">TaiwanSouth</div>
+            <div class="blog_sub" id="sub_south">
+                <ul>
+                    <li>Chiayi</li>
+                    <li>Tainan</li>
+                    <li>Kaohsiung</li>
+                    <li>Pingtung</li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog_position">
+            <div class="location" id="location_north">TaiwanNorth</div>
+            <div class="blog_sub" id="sub_north">
+                <ul>
+                    <li>Keelung</li>
+                    <li>Ilan</li>
+                    <li>Taipei</li>
+                    <li>Taoyuan</li>
+                    <li>Hsinchu</li>
+                    <li>Miaoli</li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog_position">
+            <div class="location" id="location_islands">TaiwanIslands</div>
+            <div class="blog_sub" id="sub_islands">
+                <ul>
+                    <li>Lanyu</li>
+                    <li>Green Island</li>
+                    <li>Small ball</li>
+                    <li>Wuhu</li>
+                    <li>Quemoy</li>
+                    <li>Matsu</li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog_position">
+            <div class="location" id="location_overseas">Overseas</div>
+            <div class="blog_sub" id="sub_overseas">
+                <ul>
+                    <li>....</li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div class="blog_title">
         <h2>Keelung</h2>
@@ -276,6 +340,37 @@ and open the template in the editor.
         $(".blog_list_next").click(function () {
             $(".blog_content").load("blog_date/page_3.html");
         })
+
+        $("#location_east").hover(function () {
+            $("#sub_east ul").slideDown('fast');
+        },function () {
+            $("#sub_east ul").slideUp('fast');
+        });
+        $("#location_central").hover(function () {
+            $("#sub_central ul").slideDown('fast');
+        },function () {
+            $("#sub_central ul").slideUp('fast');
+        });
+        $("#location_south").hover(function () {
+            $("#sub_south ul").slideDown('fast');
+        },function () {
+            $("#sub_south ul").slideUp('fast');
+        });
+        $("#location_north").hover(function () {
+            $("#sub_north ul").slideDown('fast');
+        },function () {
+            $("#sub_north ul").slideUp('fast');
+        });
+        $("#location_islands").hover(function () {
+            $("#sub_islands ul").slideDown('fast');
+        },function () {
+            $("#sub_islands ul").slideUp('fast');
+        });
+        $("#location_overseas").hover(function () {
+            $("#sub_overseas ul").slideDown('fast');
+        },function () {
+            $("#sub_overseas ul").slideUp('fast');
+        });
 
     </script>
 </body>
