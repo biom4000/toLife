@@ -13,7 +13,9 @@ and open the template in the editor.
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <body>
     <div class="blog_list">
-        <img id="article_back" src="image/ic_reply_white_48px.svg" alt="miss" />
+        <div id="list_back">
+            <img id="article_back" src="image/ic_reply_white_48px.svg" alt="miss" />
+        </div>
     </div>
     <div class="article_title">
         <h2>National Palace Museum</h2>
@@ -87,7 +89,7 @@ and open the template in the editor.
     <img id="article_top" src="image/top.png" alt="miss" />
 
     <script>
-        $("#article_back").click(function () {
+        $("#list_back").click(function () {
             $(".blog_content").load("blog_date/page_1.html");
         });
 

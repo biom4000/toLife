@@ -153,14 +153,16 @@ section .location:hover{
     position: absolute;
     display: none;
 }
-#article_back{
-    margin: 10px 20px;
-    width: 3%;
-    height: 3%;
+#list_back{
     cursor: pointer;
+    padding: 5px 20px;
 }
-#article_back:hover{
+#list_back:hover{
     background: #9d9d9d;
+}
+#article_back{
+    width: 40px;
+    height: 40px;
 }
 #article_top{
     position: fixed;
