@@ -282,6 +282,8 @@ and open the template in the editor.
         <button class="blog_list_end">End</button>
     </div>
 
+    <img id="article_top" src="image/top.png" alt="miss" />
+
     <script>
         var len = 210; // 超過50個字以"..."取代
         $(".text_area").each(function(i){
@@ -370,6 +372,12 @@ and open the template in the editor.
             $("#sub_overseas ul").slideDown('fast');
         },function () {
             $("#sub_overseas ul").slideUp('fast');
+        });
+
+        $("#article_top").click(function () {
+            $('.blog_wall').animate({
+                scrollTop: 0
+            }, 600);
         });
 
     </script>
