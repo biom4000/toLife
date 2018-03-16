@@ -14,8 +14,8 @@ and open the template in the editor.
 <body>
     <div class="blog_list">
         <div class="blog_position">
-            <div class="location" id="location_east">TaiwanEast</div>
             <div class="blog_sub" id="sub_east">
+                <div class="location" id="location_east">TaiwanEast</div>
                 <ul>
                     <li>Hualien</li>
                     <li>Taitung</li>
@@ -23,8 +23,8 @@ and open the template in the editor.
             </div>
         </div>
         <div class="blog_position">
-            <div class="location" id="location_central">TaiwanCentral</div>
             <div class="blog_sub" id="sub_central">
+                <div class="location" id="location_central">TaiwanCentral</div>
                 <ul>
                     <li>Taichung</li>
                     <li>Nantou</li>
@@ -34,8 +34,8 @@ and open the template in the editor.
             </div>
         </div>
         <div class="blog_position">
-            <div class="location" id="location_south">TaiwanSouth</div>
             <div class="blog_sub" id="sub_south">
+                <div class="location" id="location_south">TaiwanSouth</div>
                 <ul>
                     <li>Chiayi</li>
                     <li>Tainan</li>
@@ -45,8 +45,8 @@ and open the template in the editor.
             </div>
         </div>
         <div class="blog_position">
-            <div class="location" id="location_north">TaiwanNorth</div>
             <div class="blog_sub" id="sub_north">
+                <div class="location" id="location_north">TaiwanNorth</div>
                 <ul>
                     <li>Keelung</li>
                     <li>Ilan</li>
@@ -58,8 +58,8 @@ and open the template in the editor.
             </div>
         </div>
         <div class="blog_position">
-            <div class="location" id="location_islands">TaiwanIslands</div>
             <div class="blog_sub" id="sub_islands">
+                <div class="location" id="location_islands">TaiwanIslands</div>
                 <ul>
                     <li>Lanyu</li>
                     <li>Green Island</li>
@@ -71,8 +71,8 @@ and open the template in the editor.
             </div>
         </div>
         <div class="blog_position">
-            <div class="location" id="location_overseas">Overseas</div>
             <div class="blog_sub" id="sub_overseas">
+                <div class="location" id="location_overseas">Overseas</div>
                 <ul>
                     <li>....</li>
                 </ul>
@@ -338,36 +338,37 @@ and open the template in the editor.
             $(".blog_content").load("blog_date/page_2.html");
         });
 
-        $("#location_east").hover(function () {
+        $("#sub_east").hover(function () {
             $("#sub_east ul").slideDown('fast');
         },function () {
             $("#sub_east ul").slideUp('fast');
         });
-        $("#location_central").hover(function () {
+        $("#sub_central").hover(function () {
             $("#sub_central ul").slideDown('fast');
         },function () {
             $("#sub_central ul").slideUp('fast');
         });
-        $("#location_south").hover(function () {
+        $("#sub_south").hover(function () {
             $("#sub_south ul").slideDown('fast');
         },function () {
             $("#sub_south ul").slideUp('fast');
         });
-        $("#location_north").hover(function () {
+        $("#sub_north").hover(function () {
             $("#sub_north ul").slideDown('fast');
         },function () {
             $("#sub_north ul").slideUp('fast');
         });
-        $("#location_islands").hover(function () {
+        $("#sub_islands").hover(function () {
             $("#sub_islands ul").slideDown('fast');
         },function () {
             $("#sub_islands ul").slideUp('fast');
         });
-        $("#location_overseas").hover(function () {
+        $("#sub_overseas").hover(function () {
             $("#sub_overseas ul").slideDown('fast');
         },function () {
             $("#sub_overseas ul").slideUp('fast');
         });
+
         $("#article_top").click(function () {
             $('.blog_wall').animate({
                 scrollTop: 0
