@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
 section .gallery_nav{
     background: #6C6C6C;
     width: 25%;
@@ -112,9 +114,6 @@ section .favor_subject1 #list1-1{
 }
 section .favor_subject1 #list1-2{
     background: #FFAF69;
-}
-section .favor_subject1 #list1-3{
-    background: #FCCB9F;
 }
 section .favor_subject2 #list2-1{
     background: #219653;
@@ -257,6 +256,6 @@ section .map_body #map {
 }
 #list1-1_input{
     color: #274e9b;
-    font-family: 'Righteous', cursive;
-    font-size: 1em;
+    font-family: ‘Noto Sans TC’, sans-serif;
+    font-size: 0.5em;
 }

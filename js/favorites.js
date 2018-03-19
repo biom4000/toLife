@@ -26,7 +26,7 @@ $(document).ready(function(){
     $("#iw-add").click(function () {
         $("#list1-1_input").val(place_list.title);
     });
-    $("#list1-1_input").focus(function () {
+    $(".favor_subject1").focus(function () {
         $("#list1-1_input").css("background","red");
     });
 });
