@@ -1,4 +1,4 @@
-var map, places, infoWindow;
+var map, places, infoWindow, place_list;
 var search_markers;
 var Autocomplete;
 var hostnameRegexp = new RegExp('^https?://.+?/');
@@ -22,6 +22,12 @@ $(document).ready(function(){
             //map_search_callback();  // 延遲一秒之後顯示 2
             map_updata();            // 延遲一秒之後呼叫 b 來顯示 3
         },200);
+    });
+    $("#iw-add").click(function () {
+        $("#list1-1_input").val(place_list.title);
+    });
+    $("#list1-1_input").focus(function () {
+        $("#list1-1_input").css("background","red");
     });
 });
 
@@ -94,7 +100,7 @@ function search(){
     search_markers.placeResult = place;
     google.maps.event.addListener(search_markers, 'click', showInfoWindow);
     setTimeout(dropMarker(), 0 * 100);
-    addResult(place);
+    addResult(place,0);
 }
 
 function addResult(result,i) {
@@ -145,6 +151,7 @@ function clearResults() {
 // anchored on the marker for the hotel that the user selected.
 function showInfoWindow() {
     var marker = this;
+    place_list = marker;
     places.getDetails({placeId: marker.placeResult.place_id},
         function(place, status) {
             if (status !== google.maps.places.PlacesServiceStatus.OK) {
@@ -237,7 +244,7 @@ function search_callback() {
 
         markers[cont].placeResult = place;
         google.maps.event.addListener(markers[cont], 'click', showInfoWindow);
-        cont++;
+
 
         if (place.geometry.viewport) {
             // Only geocodes have viewport.
@@ -245,8 +252,15 @@ function search_callback() {
         } else {
             bounds.extend(place.geometry.location);
         }
-        addResult(place,cont);
+        //addResult(place,cont);
+        cont++;
     });
     cont=0;
     map.fitBounds(bounds);
+}
+
+function addResultList(result) {
+    //var object = document.getElementById('#list1-1_input')
+    //var name = result.name;
+    $("#list1-1_input").val(result.name);
 }

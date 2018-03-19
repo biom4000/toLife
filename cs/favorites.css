@@ -89,8 +89,8 @@ section .title img{
 }
 section .list{
     padding: 10px 0 5px 10px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -102,7 +102,7 @@ section .list input{
     background: none;
     border: none;
     border-bottom: 1px solid black;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     outline: none;
     text-align: center;
@@ -254,4 +254,9 @@ section .map_body #map {
     background: white;
     border-radius: 2px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#list1-1_input{
+    color: #274e9b;
+    font-family: 'Righteous', cursive;
+    font-size: 1em;
 }
