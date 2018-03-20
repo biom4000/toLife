@@ -26,8 +26,74 @@ $(document).ready(function(){
     $("#iw-add").click(function () {
         $("#list1-1_input").val(place_list.title);
     });
-    $(".favor_subject1").focus(function () {
-        $("#list1-1_input").css("background","red");
+
+    $(".favor_subject1").hover(function () {
+        $(".favor_subject1").css("background","#f2dc38");
+    },function () {
+        $(".favor_subject1").css({"background":"#fbffa2"});
+    });
+    $(".sub1_focus").focus(function () {
+        $("#sub1_title").css({
+            "border-color":"black",
+            "color":"black"
+        });
+        $("#sub1_title_img").css("opacity","1");
+        $(".list1_img").css("opacity","1");
+        $("#list1-1_input").css("border-color","black");
+        $("#list1-2_input").css("border-color","black");
+    });
+    $(".sub1_focus").blur(function () {
+        $("#sub1_title").css({
+            "border-color":"#9d9d9d",
+            "color":"#9d9d9d"
+        });
+        $("#sub1_title_img").css("opacity","0.5");
+        $(".list1_img").css("opacity","0.5");
+        $("#list1-1_input").css("border-color","#9d9d9d");
+        $("#list1-2_input").css("border-color","#9d9d9d");
+    });
+    $(".sub2_focus").focus(function () {
+        $("#sub2_title").css({
+            "border-color":"black",
+            "color":"black"
+        });
+        $("#sub2_title_img").css("opacity","1");
+        $(".list2_img").css("opacity","1");
+        $("#list2-1_input").css("border-color","black");
+        $("#list2-2_input").css("border-color","black");
+        $("#list2-3_input").css("border-color","black");
+    });
+    $(".sub2_focus").blur(function () {
+        $("#sub2_title").css({
+            "border-color":"#9d9d9d",
+            "color":"#9d9d9d"
+        });
+        $("#sub2_title_img").css("opacity","0.5");
+        $(".list2_img").css("opacity","0.5");
+        $("#list2-1_input").css("border-color","#9d9d9d");
+        $("#list2-2_input").css("border-color","#9d9d9d");
+        $("#list2-3_input").css("border-color","#9d9d9d");
+    });
+
+    $(".favor_subject2").hover(function () {
+        $(".favor_subject2").css("background","#47cf57");
+    },function () {
+        $(".favor_subject2").css("background","#aecfad");
+    });
+    $(".favor_subject3").hover(function () {
+        $(".favor_subject3").css("background","#3188c4");
+    },function () {
+        $(".favor_subject3").css("background","#83c0c4");
+    });
+    $(".favor_subject4").hover(function () {
+        $(".favor_subject4").css("background","#b356c6");
+    },function () {
+        $(".favor_subject4").css("background","#c6a6bd");
+    });
+    $(".favor_subject5").hover(function () {
+        $(".favor_subject5").css("background","#e05740");
+    },function () {
+        $(".favor_subject5").css("background","#e0a28f");
     });
 });
 

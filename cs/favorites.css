@@ -45,29 +45,29 @@ section .subjext_body::-webkit-scrollbar{
     display:none;
 }
 section .favor_subject1{
-    background: #F2C94C;
+    background: #fbffa2;
     padding: 0 0 10px 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0;
 }
 section .favor_subject2{
-    background: #6FCF97;
+    background: #aecfad;
     padding: 0 0 10px 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0;
 }
 section .favor_subject3{
-    background: #3188c4;
+    background: #83c0c4;
     padding: 0 0 10px 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0;
 }
 section .favor_subject4{
-    background: #b356c6;
+    background: #c6a6bd;
     padding: 0 0 10px 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0;
 }
 section .favor_subject5{
-    background: #e05740;
+    background: #e0a28f;
     padding: 0 0 10px 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0;
 }
 section .title{
     display: flex;
@@ -78,7 +78,8 @@ section .title input{
     height: 20px;
     background: none;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #9d9d9d;
+    color: #9d9d9d;
     padding: 0 10px;
     margin-top: 15px;
     outline: none;
@@ -88,68 +89,70 @@ section .title input{
 section .title img{
     width: 25px;
     margin-left: 8%;
+    opacity: 0.5;
 }
 section .list{
     padding: 10px 0 5px 10px;
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 section .list img{
     width: 20px;
     height: 20px;
+    opacity: 0.5;
 }
 section .list input{
     background: none;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #9d9d9d;
     width: 80%;
     margin: 0 auto;
     outline: none;
     text-align: center;
 }
 section .favor_subject1 #list1-1{
-    background: #F2994A;
+    background: #fbffa2;
 }
 section .favor_subject1 #list1-2{
-    background: #FFAF69;
+    background: #fbffa2;
 }
 section .favor_subject2 #list2-1{
-    background: #219653;
+    background: #aecfad ;
 }
 section .favor_subject2 #list2-2{
-    background: #34C271;
+    background: #aecfad;
 }
 section .favor_subject2 #list2-3{
-    background: #83FCB7;
+    background: #aecfad;
 }
 section .favor_subject3 #list3-1{
-    background: #1b5696;
+    background: #83c0c4;
 }
 section .favor_subject3 #list3-2{
-    background: #1e76c4;
+    background: #83c0c4;
 }
 section .favor_subject3 #list3-3{
-    background: #1fa0ff;
+    background: #83c0c4;
 }
 section .favor_subject4 #list4-1{
-    background: #884196;
+    background: #c6a6bd;
 }
 section .favor_subject4 #list4-2{
-    background: #b356c6;
+    background: #c6a6bd;
 }
 section .favor_subject4 #list4-3{
-    background: #e76eff;
+    background: #c6a6bd;
 }
 section .favor_subject5 #list5-1{
-    background: #963a2b;
+    background: #e0a28f;
 }
 section .favor_subject5 #list5-2{
-    background: #cb4f3a;
+    background: #e0a28f;
 }
 section .favor_subject5 #list5-3{
-    background: #ff6049;
+    background: #e0a28f;
 }
 section .map_body{
     width: 100%;
