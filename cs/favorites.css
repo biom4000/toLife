@@ -44,7 +44,7 @@ section .subjext_body{
 section .subjext_body::-webkit-scrollbar{
     display:none;
 }
-section .favor_subject1{
+section #favor_subject1{
     background: #f8ffc2;
     padding: 0 0 10px 0;
     margin: 0;
@@ -112,10 +112,10 @@ section .list input{
     outline: none;
     text-align: center;
 }
-section .favor_subject1 #list1-1{
+section #list1-1{
     background: #fbffa2;
 }
-section .favor_subject1 #list1-2{
+section #list1-2{
     background: #fbffa2;
 }
 section .favor_subject2 #list2-1{

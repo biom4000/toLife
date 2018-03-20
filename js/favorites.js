@@ -25,10 +25,11 @@ $(document).ready(function(){
     });
     $("#iw-add").click(function () {
         $("#list1-1_input").val(place_list.title);
+        addElementLi("favor_subject1");
     });
 
-    $(".favor_subject1").hover(function () {
-        $(".favor_subject1").css("background","#f2dc38");
+    $("#favor_subject1").hover(function () {
+        $(this).css("background","#f2dc38");
         $(".favor_subject2").css("background","#e8ffdb");
         $(".favor_subject3").css("background","#d9e8ff");
     });
@@ -88,14 +89,14 @@ $(document).ready(function(){
     });
 
     $(".favor_subject2").hover(function () {
-        $(".favor_subject2").css("background", "#47cf57");
-        $(".favor_subject1").css("background", "#f8ffc2");
+        $(this).css("background", "#47cf57");
+        $("#favor_subject1").css("background", "#f8ffc2");
         $(".favor_subject3").css("background", "#d9e8ff");
     });
     $(".favor_subject3").hover(function () {
-        $(".favor_subject3").css("background","#3188c4");
+        $(this).css("background","#3188c4");
         $(".favor_subject2").css("background", "#e8ffdb");
-        $(".favor_subject1").css("background", "#f8ffc2");
+        $("#favor_subject1").css("background", "#f8ffc2");
     });
 });
 
@@ -326,9 +327,15 @@ function search_callback() {
     cont=0;
     map.fitBounds(bounds);
 }
+function addElementLi(obj) {
+    var ul = document.getElementById(obj);
 
-function addResultList(result) {
-    //var object = document.getElementById('#list1-1_input')
-    //var name = result.name;
-    $("#list1-1_input").val(result.name);
+    //添加 li
+    var li = document.createElement("li");
+
+    //设置 li 属性，如 id
+    li.setAttribute("id", "newli");
+
+    li.innerHTML = "js 动态添加li";
+    ul.appendChild(li);
 }
