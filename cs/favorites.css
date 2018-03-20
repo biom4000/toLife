@@ -45,27 +45,27 @@ section .subjext_body::-webkit-scrollbar{
     display:none;
 }
 section .favor_subject1{
-    background: #fbffa2;
+    background: #f8ffc2;
     padding: 0 0 10px 0;
     margin: 0;
 }
 section .favor_subject2{
-    background: #aecfad;
+    background: #e8ffdb;
     padding: 0 0 10px 0;
     margin: 0;
 }
 section .favor_subject3{
-    background: #83c0c4;
+    background: #d9e8ff;
     padding: 0 0 10px 0;
     margin: 0;
 }
 section .favor_subject4{
-    background: #c6a6bd;
+    background: #ffe2f7;
     padding: 0 0 10px 0;
     margin: 0;
 }
 section .favor_subject5{
-    background: #e0a28f;
+    background: #ffe7cb;
     padding: 0 0 10px 0;
     margin: 0;
 }
