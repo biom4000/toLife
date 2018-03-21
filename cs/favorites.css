@@ -96,7 +96,6 @@ section .list{
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
-
 }
 section .list img{
     width: 20px;
@@ -111,47 +110,23 @@ section .list input{
     margin: 0 auto;
     outline: none;
     text-align: center;
+    color: #274e9b;
+    font-family: ‘Noto Sans TC’, sans-serif;
+    font-size: 0.5em;
 }
-section #list1-1{
+.list1{
     background: #fbffa2;
 }
-section #list1-2{
-    background: #fbffa2;
-}
-section .favor_subject2 #list2-1{
+.list2{
     background: #aecfad ;
 }
-section .favor_subject2 #list2-2{
-    background: #aecfad;
-}
-section .favor_subject2 #list2-3{
-    background: #aecfad;
-}
-section .favor_subject3 #list3-1{
+.list3{
     background: #83c0c4;
 }
-section .favor_subject3 #list3-2{
-    background: #83c0c4;
-}
-section .favor_subject3 #list3-3{
-    background: #83c0c4;
-}
-section .favor_subject4 #list4-1{
+.list4{
     background: #c6a6bd;
 }
-section .favor_subject4 #list4-2{
-    background: #c6a6bd;
-}
-section .favor_subject4 #list4-3{
-    background: #c6a6bd;
-}
-section .favor_subject5 #list5-1{
-    background: #e0a28f;
-}
-section .favor_subject5 #list5-2{
-    background: #e0a28f;
-}
-section .favor_subject5 #list5-3{
+.list5{
     background: #e0a28f;
 }
 section .map_body{
@@ -256,9 +231,4 @@ section .map_body #map {
     background: white;
     border-radius: 2px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-#list1-1_input{
-    color: #274e9b;
-    font-family: ‘Noto Sans TC’, sans-serif;
-    font-size: 0.5em;
 }

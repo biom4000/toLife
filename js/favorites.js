@@ -24,8 +24,8 @@ $(document).ready(function(){
         },200);
     });
     $("#iw-add").click(function () {
-        $("#list1-1_input").val(place_list.title);
-        addElementLi("favor_subject1");
+        //$("#list1-1_input").val(place_list.title);
+        addElementLi(1,"favor_subject1");
     });
 
     $("#favor_subject1").hover(function () {
@@ -327,15 +327,27 @@ function search_callback() {
     cont=0;
     map.fitBounds(bounds);
 }
-function addElementLi(obj) {
+function addElementLi(num,obj) {
     var ul = document.getElementById(obj);
-
+    var i=0;
     //添加 li
     var li = document.createElement("li");
+    var img = document.createElement("img");
+    var input = document.createElement("input");
 
     //设置 li 属性，如 id
-    li.setAttribute("id", "newli");
+    //li.setAttribute("id", "list"+num+"-"+i);
+    li.setAttribute("class","list list1");
+    img.setAttribute("class","list1_img");
+    img.setAttribute("src",place_list.placeResult.icon);
+    img.setAttribute("alt","miss");
+    input.setAttribute("class","sub1_focus");
+    input.setAttribute("type","text");
+    input.setAttribute("value",place_list.title);
 
-    li.innerHTML = "js 动态添加li";
+    //li.innerHTML = "js 动态添加li"+i;
     ul.appendChild(li);
+    li.appendChild(img);
+    li.appendChild(input);
+
 }
