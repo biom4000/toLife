@@ -3,6 +3,7 @@ var search_markers;
 var Autocomplete;
 var hostnameRegexp = new RegExp('^https?://.+?/');
 var countries;
+var sub_hover = 0;
 
 $(document).ready(function(){
     $(".menu").click(function () {
@@ -25,13 +26,23 @@ $(document).ready(function(){
     });
     $("#iw-add").click(function () {
         //$("#list1-1_input").val(place_list.title);
-        addElementLi(1,"favor_subject1");
+        if(sub_hover == 1){
+            addElementLi("favor_subject1");
+        }else if(sub_hover == 2){
+            addElementLi("favor_subject2");
+        }else if(sub_hover == 3){
+            addElementLi("favor_subject3");
+        }else{
+            alert("Please select one item.")
+        }
+
     });
 
     $("#favor_subject1").hover(function () {
         $(this).css("background","#f2dc38");
-        $(".favor_subject2").css("background","#e8ffdb");
-        $(".favor_subject3").css("background","#d9e8ff");
+        $("#favor_subject2").css("background","#e8ffdb");
+        $("#favor_subject3").css("background","#d9e8ff");
+        sub_hover = 1;
     });
     $(".sub1_focus").focus(function () {
         $("#sub1_title").css({
@@ -88,15 +99,24 @@ $(document).ready(function(){
         $(this).css("border-color","#9d9d9d");
     });
 
-    $(".favor_subject2").hover(function () {
+    $("#favor_subject2").hover(function () {
         $(this).css("background", "#47cf57");
         $("#favor_subject1").css("background", "#f8ffc2");
-        $(".favor_subject3").css("background", "#d9e8ff");
+        $("#favor_subject3").css("background", "#d9e8ff");
+        sub_hover = 2;
     });
-    $(".favor_subject3").hover(function () {
+    $("#favor_subject3").hover(function () {
         $(this).css("background","#3188c4");
-        $(".favor_subject2").css("background", "#e8ffdb");
+        $("#favor_subject2").css("background", "#e8ffdb");
         $("#favor_subject1").css("background", "#f8ffc2");
+        sub_hover = 3;
+    });
+
+    $("#autocomplete").focus(function () {
+        $("#map_search").css("opacity","1");
+    });
+    $("#autocomplete").blur(function () {
+        $("#map_search").css("opacity","0.5");
     });
 });
 
@@ -327,27 +347,49 @@ function search_callback() {
     cont=0;
     map.fitBounds(bounds);
 }
-function addElementLi(num,obj) {
+function addElementLi(obj) {
     var ul = document.getElementById(obj);
-    var i=0;
+    //var i=0;
     //添加 li
     var li = document.createElement("li");
     var img = document.createElement("img");
     var input = document.createElement("input");
 
-    //设置 li 属性，如 id
-    //li.setAttribute("id", "list"+num+"-"+i);
-    li.setAttribute("class","list list1");
-    img.setAttribute("class","list1_img");
-    img.setAttribute("src",place_list.placeResult.icon);
-    img.setAttribute("alt","miss");
-    input.setAttribute("class","sub1_focus");
-    input.setAttribute("type","text");
-    input.setAttribute("value",place_list.title);
+    if(obj == "favor_subject1"){
+        //设置 li 属性，如 id
+        //li.setAttribute("id", "list"+num+"-"+i);
+        li.setAttribute("class","list list1");
+        img.setAttribute("class","list1_img");
+        img.setAttribute("src",place_list.placeResult.icon);
+        img.setAttribute("alt","miss");
+        input.setAttribute("class","sub1_focus");
+        input.setAttribute("type","text");
+        input.setAttribute("value",place_list.title);
+    }else if(obj == "favor_subject2"){
+        //设置 li 属性，如 id
+        //li.setAttribute("id", "list"+num+"-"+i);
+        li.setAttribute("class","list list2");
+        img.setAttribute("class","list2_img");
+        img.setAttribute("src",place_list.placeResult.icon);
+        img.setAttribute("alt","miss");
+        input.setAttribute("class","sub2_focus");
+        input.setAttribute("type","text");
+        input.setAttribute("value",place_list.title);
+    }else if(obj == "favor_subject3"){
+        //设置 li 属性，如 id
+        //li.setAttribute("id", "list"+num+"-"+i);
+        li.setAttribute("class","list list3");
+        img.setAttribute("class","list3_img");
+        img.setAttribute("src",place_list.placeResult.icon);
+        img.setAttribute("alt","miss");
+        input.setAttribute("class","sub3_focus");
+        input.setAttribute("type","text");
+        input.setAttribute("value",place_list.title);
+    }
+
 
     //li.innerHTML = "js 动态添加li"+i;
     ul.appendChild(li);
     li.appendChild(img);
     li.appendChild(input);
-
 }

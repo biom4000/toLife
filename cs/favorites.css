@@ -49,22 +49,22 @@ section #favor_subject1{
     padding: 0 0 10px 0;
     margin: 0;
 }
-section .favor_subject2{
+section #favor_subject2{
     background: #e8ffdb;
     padding: 0 0 10px 0;
     margin: 0;
 }
-section .favor_subject3{
+section #favor_subject3{
     background: #d9e8ff;
     padding: 0 0 10px 0;
     margin: 0;
 }
-section .favor_subject4{
+section #favor_subject4{
     background: #ffe2f7;
     padding: 0 0 10px 0;
     margin: 0;
 }
-section .favor_subject5{
+section #favor_subject5{
     background: #ffe7cb;
     padding: 0 0 10px 0;
     margin: 0;
@@ -134,6 +134,7 @@ section .map_body{
     height: 100%;
 }
 section .map_body #map_search{
+    opacity: 0.5;
     position: absolute;
     z-index: 5;
     left: 52%;
