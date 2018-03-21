@@ -42,6 +42,9 @@ $(document).ready(function(){
         $(this).css("background","#f2dc38");
         $("#favor_subject2").css("background","#e8ffdb");
         $("#favor_subject3").css("background","#d9e8ff");
+        $("#sub1_title_img").css("opacity","1");
+        $("#sub2_title_img").css("opacity","0.5");
+        $("#sub3_title_img").css("opacity","0.5");
         sub_hover = 1;
     });
     $(".sub1_focus").focus(function () {
@@ -103,12 +106,18 @@ $(document).ready(function(){
         $(this).css("background", "#47cf57");
         $("#favor_subject1").css("background", "#f8ffc2");
         $("#favor_subject3").css("background", "#d9e8ff");
+        $("#sub2_title_img").css("opacity","1");
+        $("#sub1_title_img").css("opacity","0.5");
+        $("#sub3_title_img").css("opacity","0.5");
         sub_hover = 2;
     });
     $("#favor_subject3").hover(function () {
         $(this).css("background","#3188c4");
         $("#favor_subject2").css("background", "#e8ffdb");
         $("#favor_subject1").css("background", "#f8ffc2");
+        $("#sub3_title_img").css("opacity","1");
+        $("#sub1_title_img").css("opacity","0.5");
+        $("#sub2_title_img").css("opacity","0.5");
         sub_hover = 3;
     });
 
