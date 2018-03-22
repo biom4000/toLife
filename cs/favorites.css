@@ -46,22 +46,22 @@ section .subjext_body::-webkit-scrollbar{
 }
 section #favor_subject1{
     background: #f8ffc2;
-    padding: 0 0 10px 0;
+    padding: 0 0 20px 0;
     margin: 0;
 }
 section #favor_subject2{
     background: #e8ffdb;
-    padding: 0 0 10px 0;
+    padding: 0 0 20px 0;
     margin: 0;
 }
 section #favor_subject3{
     background: #d9e8ff;
-    padding: 0 0 10px 0;
+    padding: 0 0 20px 0;
     margin: 0;
 }
 section #favor_subject4{
     background: #ffe2f7;
-    padding: 0 0 10px 0;
+    padding: 0 0 20px 0;
     margin: 0;
 }
 section #favor_subject5{
@@ -71,7 +71,7 @@ section #favor_subject5{
 }
 section .title{
     display: flex;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 20px;
 }
 section .title input{
     width: 80%;
@@ -102,7 +102,7 @@ section .list img{
     height: 20px;
     opacity: 0.5;
 }
-section .list input{
+section .list div{
     background: none;
     border: none;
     border-bottom: 1px solid #9d9d9d;

@@ -45,6 +45,15 @@ $(document).ready(function(){
         $("#sub1_title_img").css("opacity","1");
         $("#sub2_title_img").css("opacity","0.5");
         $("#sub3_title_img").css("opacity","0.5");
+
+        $("#sub1_title").css({
+            "border-color":"black",
+            "color":"#d94600"
+        });
+        $("#sub1_title_img").css("opacity","1");
+        $(".list1_img").css("opacity","1");
+        $(this).css("border-color","black");
+        $(sub)
         sub_hover = 1;
     });
     $(".sub1_focus").focus(function () {
@@ -362,7 +371,7 @@ function addElementLi(obj) {
     //添加 li
     var li = document.createElement("li");
     var img = document.createElement("img");
-    var input = document.createElement("input");
+    var div = document.createElement("div");
 
     if(obj == "favor_subject1"){
         //设置 li 属性，如 id
@@ -371,9 +380,9 @@ function addElementLi(obj) {
         img.setAttribute("class","list1_img");
         img.setAttribute("src",place_list.placeResult.icon);
         img.setAttribute("alt","miss");
-        input.setAttribute("class","sub1_focus");
-        input.setAttribute("type","text");
-        input.setAttribute("value",place_list.title);
+        div.setAttribute("class","sub1_focus");
+        div.setAttribute("tabindex","0");
+        div.innerHTML = place_list.title;
     }else if(obj == "favor_subject2"){
         //设置 li 属性，如 id
         //li.setAttribute("id", "list"+num+"-"+i);
@@ -381,9 +390,9 @@ function addElementLi(obj) {
         img.setAttribute("class","list2_img");
         img.setAttribute("src",place_list.placeResult.icon);
         img.setAttribute("alt","miss");
-        input.setAttribute("class","sub2_focus");
-        input.setAttribute("type","text");
-        input.setAttribute("value",place_list.title);
+        div.setAttribute("class","sub2_focus");
+        div.setAttribute("tabindex","0");
+        div.innerHTML = place_list.title;
     }else if(obj == "favor_subject3"){
         //设置 li 属性，如 id
         //li.setAttribute("id", "list"+num+"-"+i);
@@ -391,14 +400,12 @@ function addElementLi(obj) {
         img.setAttribute("class","list3_img");
         img.setAttribute("src",place_list.placeResult.icon);
         img.setAttribute("alt","miss");
-        input.setAttribute("class","sub3_focus");
-        input.setAttribute("type","text");
-        input.setAttribute("value",place_list.title);
+        div.setAttribute("class","sub3_focus");
+        div.setAttribute("tabindex","0");
+        div.innerHTML = place_list.title;
     }
-
-
     //li.innerHTML = "js 动态添加li"+i;
     ul.appendChild(li);
     li.appendChild(img);
-    li.appendChild(input);
+    li.appendChild(div);
 }
