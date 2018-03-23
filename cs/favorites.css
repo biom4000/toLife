@@ -233,12 +233,16 @@ section .map_body #map {
     border-radius: 2px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#sub1_title_img{
+#sub1_title_img, #sub2_title_img, #sub3_title_img{
     cursor: pointer;
 }
-#sub2_title_img{
-    cursor: pointer;
+.sub1_focus:focus,.sub2_focus:focus,.sub3_focus:focus{
+    border-color: black;
 }
-#sub3_title_img{
-    cursor: pointer;
+#favor_subject1:hover img,#favor_subject2:hover img,#favor_subject3:hover img{
+    opacity: 1;
+}
+#favor_subject1:hover #sub1_title,#favor_subject2:hover #sub2_title,#favor_subject3:hover #sub3_title{
+    border-color: black;
+    color: #d94600;
 }

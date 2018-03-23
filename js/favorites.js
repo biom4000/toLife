@@ -45,72 +45,8 @@ $(document).ready(function(){
         $("#sub1_title_img").css("opacity","1");
         $("#sub2_title_img").css("opacity","0.5");
         $("#sub3_title_img").css("opacity","0.5");
-
-        $("#sub1_title").css({
-            "border-color":"black",
-            "color":"#d94600"
-        });
-        $("#sub1_title_img").css("opacity","1");
-        $(".list1_img").css("opacity","1");
-        $(this).css("border-color","black");
-        $(sub)
         sub_hover = 1;
     });
-    $(".sub1_focus").focus(function () {
-        $("#sub1_title").css({
-            "border-color":"black",
-            "color":"#d94600"
-        });
-        $("#sub1_title_img").css("opacity","1");
-        $(".list1_img").css("opacity","1");
-        $(this).css("border-color","black");
-    });
-    $(".sub1_focus").blur(function () {
-        $("#sub1_title").css({
-            "border-color":"#9d9d9d",
-            "color":"#9d9d9d"
-        });
-        $("#sub1_title_img").css("opacity","0.5");
-        $(".list1_img").css("opacity","0.5");
-        $(this).css("border-color","#9d9d9d");
-    });
-    $(".sub2_focus").focus(function () {
-        $("#sub2_title").css({
-            "border-color":"black",
-            "color":"#d94600"
-        });
-        $("#sub2_title_img").css("opacity","1");
-        $(".list2_img").css("opacity","1");
-        $(this).css("border-color","black");
-    });
-    $(".sub2_focus").blur(function () {
-        $("#sub2_title").css({
-            "border-color":"#9d9d9d",
-            "color":"#9d9d9d"
-        });
-        $("#sub2_title_img").css("opacity","0.5");
-        $(".list2_img").css("opacity","0.5");
-        $(this).css("border-color","#9d9d9d");
-    });
-    $(".sub3_focus").focus(function () {
-        $("#sub3_title").css({
-            "border-color":"black",
-            "color":"#d94600"
-        });
-        $("#sub3_title_img").css("opacity","1");
-        $(".list3_img").css("opacity","1");
-        $(this).css("border-color","black");
-    });
-    $(".sub3_focus").blur(function () {
-        $("#sub3_title").css({
-            "border-color":"#9d9d9d",
-            "color":"#9d9d9d"
-        });
-        $("#sub3_title_img").css("opacity","0.5");
-        $(".list3_img").css("opacity","0.5");
-        $(this).css("border-color","#9d9d9d");
-    });
-
     $("#favor_subject2").hover(function () {
         $(this).css("background", "#47cf57");
         $("#favor_subject1").css("background", "#f8ffc2");
